@@ -221,50 +221,39 @@ Figure 9(b) 使用 16 个固定 DROID clip，三个训练 seed（1/1000/10000）
 
 ### 5.3 主要重跑命令
 
-从 `/home/songxw/H-JEPA/h_jepa` 执行公开权重评测：
+从 GitHub 仓库根目录使用规范化入口。恢复 Release 附件、安装归档依赖后，设置数据目录和 Python 3.11 解释器；GPU 编号按实际分配填写：
 
 ```bash
-python scripts/run_official_reproduction.py \
-  --experiments droid probe depth cost --gpus 0,1,2,3,4,6
+export HJEPA_HOME=/path/to/hjepa-data
+export PYTHON_BIN=/path/to/python3.11
+
+# 枚举全部 237 个任务。
+bash reproduction/2026-11-17/scripts/reproduce.sh dry-run
+
+# 重跑需要先下载固定版本的官方权重和公开数据。
+bash reproduction/2026-11-17/scripts/reproduce.sh evaluate \
+  --experiments droid probe depth cost --gpus 0,1
+
+# 从归档原始结果重算规划汇总，无需再次运行 GPU 规划。
+bash reproduction/2026-11-17/scripts/reproduce.sh aggregate
+
+# 重算 probe 汇总及 Table 3/11 通用分析。
+bash reproduction/2026-11-17/scripts/reproduce.sh probes
+bash reproduction/2026-11-17/scripts/reproduce.sh protocol
 ```
 
-单独执行官方 release 聚合：
+完整恢复和数据下载说明见 [归档说明](../README.md) 与 [资产恢复说明](../environment/ASSETS.md)。脚本的原生参数和各图表执行链路见 [ANALYSIS.md](../code/h_jepa/scripts/ANALYSIS.md)。
+
+重算频率图时，从归档的 `code/h_jepa` 目录执行：
 
 ```bash
-python scripts/analyze_official_release.py
-```
-
-重算 probe 与 Figure 4/5/12：
-
-```bash
-python scripts/analyze_probes.py "$HJEPA_HOME/ckpts" \
-  --model hjepa_l2 --model hjepa_l4 --require-seeds 3 \
-  --output-dir "$HJEPA_HOME/analyse"
-
-python scripts/analyze_frequency.py \
+"$PYTHON_BIN" scripts/analyze_frequency.py \
   --centroids-csv "$HJEPA_HOME/analyse/spectral_centroids.csv" \
   --probe-csv "$HJEPA_HOME/analyse/probe_summary.csv" \
   --output-dir "$HJEPA_HOME/analyse"
 ```
 
-重算 Table 3/11 通用分析：
-
-```bash
-python scripts/analyze_protocol_tables.py \
-  --output-dir "$HJEPA_HOME/analyse/protocol_tables"
-```
-
-本地 CPU 分析和日志刷新从仓库根目录执行：
-
-```bash
-/home/songxw/miniconda3/envs/hjepa/bin/python \
-  local_env/analysis_20261027/analyze_local_reproduction.py
-
-/home/songxw/miniconda3/envs/hjepa/bin/python \
-  local_env/analysis_20261027/analyze_local_reproduction.py --refresh-logs
-```
-
-注意：`analyze_protocol_tables.py` 的 Table 11 是同一数学性质的新随机实例；本报告引用的实际多进程 Gloo 结果由 `verify_sigreg_sharding.py` 生成。
+原本地 CPU 分析、日志刷新和 Gloo 验证脚本保存在 `scripts/historical/analysis_20261027/`；这些辅助脚本中保留了原机器路径，重跑前需适配。Table 11 报告中的实际多进程数值来自 `verify_sigreg_sharding.py` 及其归档日志；规范化 `protocol` 入口使用新的随机实例验证同一数学性质。
 
 ## 6. 公开 release 尚不能精确复现的论文结果
 
