@@ -248,9 +248,9 @@ bash reproduction/2026-11-17/scripts/reproduce.sh protocol
 
 ```bash
 "$PYTHON_BIN" scripts/analyze_frequency.py \
-  --centroids-csv "$HJEPA_HOME/analyse/spectral_centroids.csv" \
-  --probe-csv "$HJEPA_HOME/analyse/probe_summary.csv" \
-  --output-dir "$HJEPA_HOME/analyse"
+  --centroids-csv ../../results/local/frequency/spectral_centroids.csv \
+  --probe-csv ../../results/official/probe_summary.csv \
+  --output-dir "$HJEPA_HOME/analyse/frequency_reaggregated_20261117"
 ```
 
 原本地 CPU 分析、日志刷新和 Gloo 验证脚本保存在 `scripts/historical/analysis_20261027/`；这些辅助脚本中保留了原机器路径，重跑前需适配。Table 11 报告中的实际多进程数值来自 `verify_sigreg_sharding.py` 及其归档日志；规范化 `protocol` 入口使用新的随机实例验证同一数学性质。
