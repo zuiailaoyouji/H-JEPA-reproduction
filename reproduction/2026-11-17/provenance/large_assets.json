@@ -44,26 +44,86 @@
         },
         {
           "name": "local_checkpoints.tar.zst.part005",
-          "bytes": 268435456,
-          "sha256": "2d4ac9a57e97f234f4572ffe74c8d154218f3520e39e661e2d5f7fb2fe95eac8"
+          "bytes": 67108864,
+          "sha256": "9db1038951997bba1044e40767ddfac71bda68772c679f56420cec6f882b88a2"
         },
         {
           "name": "local_checkpoints.tar.zst.part006",
-          "bytes": 268435456,
-          "sha256": "d157bfa122700af3c3516b9febdd04bfdb8fd92dc9ad3eb94fc58181e6f4ccd2"
+          "bytes": 67108864,
+          "sha256": "3cb3a52676e37799f160e1a54e9039217e45bb005a8187487fd4c19eae3a03ae"
         },
         {
           "name": "local_checkpoints.tar.zst.part007",
-          "bytes": 268435456,
-          "sha256": "3b70d21a7a63a51521f15d45188c10ef1c4723af4fbb59cf23edb403ef9ae52e"
+          "bytes": 67108864,
+          "sha256": "314b8daa3ad80432e6a529cec28e334ead384b5b4d38b2ec937bfcf7b2033235"
         },
         {
           "name": "local_checkpoints.tar.zst.part008",
-          "bytes": 268435456,
-          "sha256": "98fc22ec0ee817e4b0f95f043900a065cf6d1d2d706902eb36ace36251ffd9b3"
+          "bytes": 67108864,
+          "sha256": "b4492bf86a69366e02e00c14cf2cd0e399ea3e36da5a3ec0e58bed0895d7a413"
         },
         {
           "name": "local_checkpoints.tar.zst.part009",
+          "bytes": 67108864,
+          "sha256": "724258052f6d8ac8f0fcc118e9e4614dbc119de5a4a81b663d1ef0fd5d08b5c3"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part010",
+          "bytes": 67108864,
+          "sha256": "fb5db1886179c051b535069953e629af219ee89d8fe3c8ab4edfe1c1f6cbde78"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part011",
+          "bytes": 67108864,
+          "sha256": "91a5c72780bbe2f739a5ee4378b888151bf39d0293c9db87458188355fa62967"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part012",
+          "bytes": 67108864,
+          "sha256": "c0f72dd469572b49e695e0c4c38811dc81ff72784a832f6848f5936cb47fccdd"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part013",
+          "bytes": 67108864,
+          "sha256": "859c268bf133f4b5dcdc3ad5b5953b36a10de9e0c14402b98fb60b0cce42aa66"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part014",
+          "bytes": 67108864,
+          "sha256": "105f0353a015fb8438ae2e026e73deaec99abbbebd43d0518f2aa00ae0e699ce"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part015",
+          "bytes": 67108864,
+          "sha256": "283dbe0002ec3fd94ee09ed5a0b3d4df441e8f0bc35251da4b82ac674753d4c2"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part016",
+          "bytes": 67108864,
+          "sha256": "d481c85694263866d06254432999cf679ef3eead17f9e395e57b455ecc1a2322"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part017",
+          "bytes": 67108864,
+          "sha256": "7b648f527eaa8225562727b21bb3c758c724933d34504a65aad1120c747e472e"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part018",
+          "bytes": 67108864,
+          "sha256": "b27110328ff942c2088dd9b34743b2ba69c643e90b90463f7e2c1919d0d6966a"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part019",
+          "bytes": 67108864,
+          "sha256": "49b98df46524e694b44309d74796e6b0e9f4f432822cafcb874df1765e773b4f"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part020",
+          "bytes": 67108864,
+          "sha256": "9046d7d05897da122fde7df25b87d40b00d7c71c62baef575b7c9d823e6d0342"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part021",
           "bytes": 132541126,
           "sha256": "0f701a4e97442d2e532c6cdae294918dd830571c3c9f4edbd154c7239f483597"
         }
