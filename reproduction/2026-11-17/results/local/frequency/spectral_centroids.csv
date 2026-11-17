@@ -1,0 +1,16 @@
+entity,centroid_cycles_per_frame,period_frames,n_episodes,dimensions,frequency_gap,env,dataset,frameskip,role
+xy,0.042103863120342526,23.750789734941186,25000,2,6.266125692352952,ant,/home/songxw/hjepa-data/visual_antmaze_medium_explore_stitch_train.h5,5,retained
+proprio,0.2638280984456902,3.790346842854772,25000,27,6.266125692352952,ant,/home/songxw/hjepa-data/visual_antmaze_medium_explore_stitch_train.h5,5,discarded
+block_pos,0.07059994607162029,14.164316768536162,9800,3,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,
+block_ori,0.07903027193553382,12.653379211648355,9800,6,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,
+effector_pos,0.10176442171437992,9.826617035241247,9800,3,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,
+effector_yaw,0.08716188874318916,11.472904206405694,9800,2,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,
+gripper,0.08253832221877908,12.115584290038798,9800,2,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,
+arm_joint_pos,0.12462985403122258,8.023759698454574,9800,6,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,
+arm_joint_vel,0.19266702827426005,5.190301677236167,9800,6,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,
+xy,0.029813421054241906,33.54194066426061,3750,2,2.2943470594384907,fourroom,/home/songxw/hjepa-data/fourroom_tp35_d1.h5,5,retained
+distractor0_xy,0.0684023349276015,14.61938398825744,3750,2,2.2943470594384907,fourroom,/home/songxw/hjepa-data/fourroom_tp35_d1.h5,5,discarded
+agent_xy,0.07838643976883539,12.757308572108114,18685,2,2.6706509655897994,pusht,/home/songxw/hjepa-data/pusht_expert_train.h5,5,
+block_xy,0.06855127102255049,14.587621572633454,18644,2,2.6706509655897994,pusht,/home/songxw/hjepa-data/pusht_expert_train.h5,5,
+block_ori,0.06898373173086178,14.496171414754333,18644,2,2.6706509655897994,pusht,/home/songxw/hjepa-data/pusht_expert_train.h5,5,
+agent_vel,0.1830765181487825,5.462196955195099,18685,2,2.6706509655897994,pusht,/home/songxw/hjepa-data/pusht_expert_train.h5,5,

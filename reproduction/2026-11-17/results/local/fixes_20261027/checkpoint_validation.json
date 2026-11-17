@@ -1,0 +1,51 @@
+{
+  "real_data_smoke": {
+    "global_step": 8,
+    "scheduler_max_steps": 8,
+    "scheduler_last_step": 8,
+    "final_lrs": [
+      0.0,
+      0.0
+    ],
+    "protocol": {
+      "version": 2,
+      "batch_size_per_device": 128,
+      "accumulate_grad_batches": 1,
+      "scheduler_units": "optimizer_updates"
+    }
+  },
+  "legacy_checkpoints": [
+    {
+      "model": "ant_hjepa_l2",
+      "path": "/home/songxw/hjepa-data/ckpts/ant/ant_hjepa_l2/seed42/lightning_resume/last.ckpt",
+      "readable": true,
+      "epoch": 1,
+      "global_step": 118500,
+      "tensor_count": 411
+    },
+    {
+      "model": "pusht_hjepa_l3",
+      "path": "/home/songxw/hjepa-data/ckpts/pusht/pusht_hjepa_l3/seed42/lightning_resume/last.ckpt",
+      "readable": true,
+      "epoch": 0,
+      "global_step": 5500,
+      "tensor_count": 535
+    },
+    {
+      "model": "cube_hjepa_l3",
+      "path": "/home/songxw/hjepa-data/ckpts/cube/cube_hjepa_l3/seed42/lightning_resume/last.ckpt",
+      "readable": true,
+      "epoch": 0,
+      "global_step": 3000,
+      "tensor_count": 535
+    },
+    {
+      "model": "fourroom_hjepa_l3",
+      "path": "/home/songxw/hjepa-data/ckpts/fourroom/fourroom_hjepa_l3/seed42/lightning_resume/last.ckpt",
+      "readable": true,
+      "epoch": 6,
+      "global_step": 45962,
+      "tensor_count": 483
+    }
+  ]
+}

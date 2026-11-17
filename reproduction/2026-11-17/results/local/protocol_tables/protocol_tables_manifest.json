@@ -1,0 +1,21 @@
+{
+  "table_3": {
+    "status": "exact_from_public_datasets_and_loader",
+    "level1_frames": [
+      4,
+      7,
+      13,
+      25
+    ]
+  },
+  "table_11": {
+    "status": "exact_property_new_random_instance",
+    "seed": 0,
+    "dtype": "float64",
+    "samples": 256,
+    "dimensions": 32,
+    "directions": 64,
+    "knots": 17,
+    "qualification": "The paper does not publish the seed for its fixed Gaussian samples and projection directions. Absolute values therefore differ, while global TEP and gradient invariance under 1/2/4 equal shards are reproduced exactly."
+  }
+}

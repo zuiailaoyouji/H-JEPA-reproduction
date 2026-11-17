@@ -1,0 +1,102 @@
+[
+  {
+    "config": "fourroom_hjepa_l2",
+    "batch": 128,
+    "frames": 7,
+    "sigreg_batch_sizes": [
+      128
+    ],
+    "peak_allocated_GiB": 4.7255353927612305,
+    "peak_reserved_GiB": 5.455078125,
+    "steps": [
+      {
+        "loss": 15.474577903747559,
+        "seconds": 8.8065269831568
+      },
+      {
+        "loss": 14.91326904296875,
+        "seconds": 0.45222987327724695
+      }
+    ]
+  },
+  {
+    "config": "pusht_hjepa_l3",
+    "batch": 128,
+    "frames": 13,
+    "sigreg_batch_sizes": [
+      128
+    ],
+    "peak_allocated_GiB": 5.877595901489258,
+    "peak_reserved_GiB": 6.73828125,
+    "steps": [
+      {
+        "loss": 12.412463188171387,
+        "seconds": 4.149184595793486
+      },
+      {
+        "loss": 11.97166633605957,
+        "seconds": 0.8380015837028623
+      }
+    ]
+  },
+  {
+    "config": "cube_hjepa_l3",
+    "batch": 128,
+    "frames": 13,
+    "sigreg_batch_sizes": [
+      128
+    ],
+    "peak_allocated_GiB": 5.877719402313232,
+    "peak_reserved_GiB": 6.740234375,
+    "steps": [
+      {
+        "loss": 12.469532012939453,
+        "seconds": 7.427728062495589
+      },
+      {
+        "loss": 11.98164176940918,
+        "seconds": 0.81084612198174
+      }
+    ]
+  },
+  {
+    "config": "ant_hjepa_l2",
+    "batch": 128,
+    "frames": 7,
+    "sigreg_batch_sizes": [
+      128
+    ],
+    "peak_allocated_GiB": 3.423799514770508,
+    "peak_reserved_GiB": 3.955078125,
+    "steps": [
+      {
+        "loss": 7.911875247955322,
+        "seconds": 7.369469854049385
+      },
+      {
+        "loss": 7.684975624084473,
+        "seconds": 0.6077932259067893
+      }
+    ]
+  },
+  {
+    "config": "cube_hjepa_l4",
+    "batch": 128,
+    "frames": 25,
+    "sigreg_batch_sizes": [
+      128
+    ],
+    "peak_allocated_GiB": 7.351058006286621,
+    "peak_reserved_GiB": 8.74609375,
+    "steps": [
+      {
+        "loss": 17.071285247802734,
+        "seconds": 3.786297610960901
+      },
+      {
+        "loss": 16.474136352539062,
+        "seconds": 0.818641908466816
+      }
+    ]
+  }
+]

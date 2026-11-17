@@ -1,0 +1,9 @@
+entity,centroid_cycles_per_frame,period_frames,n_episodes,dimensions,frequency_gap,env,dataset,frameskip,role,delta_nmse,n_entities
+xy,0.042103863120342526,23.750789734941186,25000,2,6.266125692352952,ant,/home/songxw/hjepa-data/visual_antmaze_medium_explore_stitch_train.h5,5,retained,4.5971601745501786e-05,1
+proprio,0.2638280984456902,3.790346842854772,25000,27,6.266125692352952,ant,/home/songxw/hjepa-data/visual_antmaze_medium_explore_stitch_train.h5,5,discarded,0.36963231613238656,1
+block_pos,0.07059994607162029,14.164316768536162,9800,3,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,retained,0.0001536078634671867,1
+arm_joint_vel,0.19266702827426005,5.190301677236167,9800,6,2.7289968193291325,cube,/home/songxw/hjepa-data/cube_single_expert_train.h5,5,discarded,0.052934169769287165,1
+xy,0.029813421054241906,33.54194066426061,3750,2,2.2943470594384907,fourroom,/home/songxw/hjepa-data/fourroom_tp35_d1.h5,5,retained,2.0028715274141483e-05,1
+distractor0_xy,0.0684023349276015,14.61938398825744,3750,2,2.2943470594384907,fourroom,/home/songxw/hjepa-data/fourroom_tp35_d1.h5,5,discarded,0.21405467391014105,1
+block_xy,0.06855127102255049,14.587621572633454,18644,2,2.6706509655897994,pusht,/home/songxw/hjepa-data/pusht_expert_train.h5,5,retained,0.001266540338595708,1
+agent_vel,0.1830765181487825,5.462196955195099,18685,2,2.6706509655897994,pusht,/home/songxw/hjepa-data/pusht_expert_train.h5,5,discarded,-0.05586804946263624,1

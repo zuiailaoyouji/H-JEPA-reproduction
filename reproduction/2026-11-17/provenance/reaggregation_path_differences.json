@@ -1,0 +1,27 @@
+[
+  {
+    "file": "depth_raw.csv",
+    "differing_columns": {
+      "path": 84
+    }
+  },
+  {
+    "file": "cost_ladder_raw.csv",
+    "differing_columns": {
+      "path": 108
+    }
+  },
+  {
+    "file": "droid_raw.csv",
+    "differing_columns": {
+      "path": 27
+    }
+  },
+  {
+    "file": "probe_per_seed.csv",
+    "differing_columns": {
+      "run_dir": 222,
+      "metrics_path": 222
+    }
+  }
+]

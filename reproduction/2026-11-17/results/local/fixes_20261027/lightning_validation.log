@@ -1,0 +1,273 @@
+09:28:59 | INFO  | __init__.py | JAX version 0.10.2 available.
+09:29:00 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+Seed set to 42
+09:29:00 | INFO  | utils.py    | ── Module ────────────────────────────────────────
+09:29:00 | WARN  | module.py   | ! No hyperparameters provided - hyperparameter logging is disabled.
+09:29:00 | INFO  | module.py   |   Setting custom forward method.
+09:29:00 | INFO  | module.py   |   Setting attribute: self.model = <class 'torch.nn.modules.linear.Linear'>
+09:29:00 | INFO  | module.py   |   Setting attribute: self.optim = <class 'dict'>
+09:29:00 | INFO  | module.py   |   No metrics configuration provided - automatic metric tracking is disabled.
+/home/songxw/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/fabric/plugins/environments/slurm.py:204: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python local_env/fixes_20261027/validate_lightning.py ...
+09:29:00 | INFO  | env_info.py |   EnvironmentDumpCallback initialized (filename=environment.json, async=True)
+09:29:00 | INFO  | utils.py    | ── HuggingFaceCheckpoint ─────────────────────────
+09:29:00 | INFO  | hf_models.py|   save_dir: <cyan>hf_exports</cyan>
+09:29:00 | INFO  | hf_models.py|   per_step: <cyan>False</cyan>  (False ⇒ overwrite single 'last/' subdir; True ⇒ keep step_N/)
+Adding 14 callbacks from entry point 'stablepretraining_callbacks': PrintProgressBar, ModuleRegistryCallback, LoggingCallback, EnvironmentDumpCallback, TrainerInfo, SklearnCheckpoint, WandbCheckpoint, TrackioCheckpoint, SwanLabCheckpoint, ModuleSummary, SLURMInfo, LogUnusedParametersOnce, HuggingFaceCheckpointCallback, HardwareMonitor
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+/home/songxw/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/trainer/configuration_validator.py:70: You defined a `validation_step` but have no `val_dataloader`. Skipping val loop.
+09:29:00 | INFO  | utils.py    | ── EnvironmentDump ───────────────────────────────
+09:29:00 | INFO  | env_info.py |   log_dir: /home/songxw/H-JEPA/local_env/fixes_20261027/spt_loop_1
+09:29:00 | INFO  | env_info.py |   Running environment dump in background thread (non-blocking)
+09:29:00 | INFO  | env_info.py |   Collecting environment information...
+09:29:00 | OK    | env_info.py | ✓ Background thread started successfully
+09:29:00 | OK    | env_info.py | ✓ Python 3.11.13
+09:29:00 | INFO  | trainer_inf~|   linking trainer to DataModule
+09:29:00 | OK    | env_info.py | ✓ System: Linux 5.15.0-171-generic (x86_64)
+09:29:00 | INFO  | utils.py    | ── Callbacks (in order) ──────────────────────────
+09:29:00 | INFO  | env_info.py |   Hostname: 8A100
+09:29:00 | INFO  | utils.py    |     [ 0] PrintProgressBar
+09:29:00 | INFO  | utils.py    |     [ 1] ModuleRegistryCallback
+09:29:00 | INFO  | utils.py    |     [ 2] LoggingCallback
+09:29:00 | INFO  | utils.py    |     [ 3] EnvironmentDumpCallback
+09:29:00 | INFO  | utils.py    |     [ 4] TrainerInfo
+09:29:00 | INFO  | utils.py    |     [ 5] SklearnCheckpoint
+09:29:00 | INFO  | utils.py    |     [ 6] WandbCheckpoint
+09:29:00 | INFO  | utils.py    |     [ 7] TrackioCheckpoint
+09:29:00 | INFO  | utils.py    |     [ 8] SwanLabCheckpoint
+09:29:00 | INFO  | utils.py    |     [ 9] ModuleSummary
+09:29:00 | INFO  | utils.py    |     [10] SLURMInfo
+09:29:00 | INFO  | utils.py    |     [11] LogUnusedParametersOnce
+09:29:00 | INFO  | utils.py    |     [12] HuggingFaceCheckpointCallback
+09:29:00 | INFO  | utils.py    |     [13] HardwareMonitor
+09:29:00 | INFO  | utils.py    |   ⚑ marks order-sensitive callbacks; see AGENTS.md → Callback ordering for the full rules.
+09:29:00 | WARN  | trainer_inf~| ! Using a custom DataModule, won't have extra info
+09:29:00 | INFO  | utils.py    | ── SklearnCheckpoint ─────────────────────────────
+09:29:00 | INFO  | checkpoint_~|   Sklearn Modules:
+09:29:00 | INFO  | checkpoint_~| 
+┏━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+┃ Module   ┃ Name   ┃ Type   ┃
+┣━━━━━━━━━━╋━━━━━━━━╋━━━━━━━━┫
+┗━━━━━━━━━━┻━━━━━━━━┻━━━━━━━━┛
+09:29:00 | INFO  | utils.py    | ── WandbCheckpoint ───────────────────────────────
+09:29:00 | INFO  | utils.py    | ── TrackioCheckpoint ─────────────────────────────
+09:29:00 | INFO  | utils.py    | ── SwanLabCheckpoint ─────────────────────────────
+09:29:00 | INFO  | utils.py    | ── PyTorch Modules ───────────────────────────────
+09:29:00 | WARN  | module.py   | ! You are calling self.parameters which also gives callbacks parameters, to remove them, pass `with_callbacks=False`
+09:29:00 | INFO  | trainer_inf~| \n+-------------------+----------------------+--------------------------+--------------------------+---------+
+| Module            | Trainable parameters | Non Trainable parameters | Uninitialized parameters | Buffers |
++-------------------+----------------------+--------------------------+--------------------------+---------+
+|                   |                    2 |                        0 |                        0 |       0 |
+| callbacks_modules |                    0 |                        0 |                        0 |       0 |
+| callbacks_metrics |                    0 |                        0 |                        0 |       0 |
+| model             |                    2 |                        0 |                        0 |       0 |
++-------------------+----------------------+--------------------------+--------------------------+---------+
+09:29:00 | INFO  | utils.py    | ── SLURM ─────────────────────────────────────────
+09:29:00 | INFO  | trainer_inf~|   Job ID: N/A
+09:29:00 | INFO  | trainer_inf~|   Task ID: N/A
+09:29:00 | INFO  | trainer_inf~|   Job Name: N/A
+09:29:00 | INFO  | trainer_inf~|   Nodes: N/A
+09:29:00 | INFO  | trainer_inf~|   Tasks: N/A
+09:29:00 | INFO  | trainer_inf~|   CPUs per node: N/A
+09:29:00 | INFO  | trainer_inf~|   CPUs per task: N/A
+09:29:00 | INFO  | trainer_inf~|   Memory per node: N/A
+09:29:00 | INFO  | trainer_inf~|   Memory per CPU: N/A
+09:29:00 | INFO  | trainer_inf~|   Time limit: N/A
+09:29:00 | INFO  | trainer_inf~|   Partition: N/A
+09:29:00 | INFO  | trainer_inf~|   Node List: N/A
+09:29:00 | INFO  | trainer_inf~|   Submit Directory: N/A
+09:29:00 | INFO  | utils.py    | ── HardwareMonitor ───────────────────────────────
+09:29:00 | INFO  | hardware_mo~|   interval: 10.0s
+09:29:00 | INFO  | hardware_mo~|   prefix:   'hardware/'
+09:29:00 | INFO  | hardware_mo~|   metrics:  cpu=True ram=True disk=True net=True gpu=True
+09:29:00 | INFO  | hardware_mo~|   per-rank: rank 0 only
+09:29:00 | INFO  | utils.py    | ── Optimizers ────────────────────────────────────
+09:29:00 | INFO  | module.py   |   Optimizer specified by Dict with keys ['model_opt']
+09:29:00 | INFO  | module.py   | 
+┏━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Optimizer   ┃ Pattern   ┃   Matched Modules ┃   Param Tensors ┃   Total Params ┃   RequiresGrad Tensors ┃
+┣━━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ model_opt   ┃ model     ┃                 1 ┃               2 ┃              2 ┃                      2 ┃
+┗━━━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━┛
+09:29:00 | INFO  | lr_schedule~| 	User provided a callable with two args, calling with optimizer, module!!
+Loading `train_dataloader` to estimate number of stepping batches.
+/home/songxw/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:434: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=127` in the `DataLoader` to improve performance.
+09:29:00 | INFO  | lr_schedule~| 	User provided a dict
+09:29:00 | INFO  | module.py   |   Configured optimizer 'model_opt' (modules=1, param_tensors=2, total_params=2) with LinearWarmupCosineAnnealingLR scheduler.
+09:29:00 | WARN  | hf_models.py| ! No Hugging Face (PreTrainedModel) submodules found in LightningModule.
+09:29:00 | INFO  | utils.py    | ── Optimizers ────────────────────────────────────
+09:29:00 | INFO  | module.py   |   self.optimizers() gave us 1 optimizers
+09:29:00 | WARN  | module.py   | ! No clip val found for optimizer default_0
+09:29:00 | WARN  | module.py   | ! Will use the Trainer's value of None
+09:29:00 | WARN  | module.py   | ! No clip algorithm found for optimizer default_0
+09:29:00 | WARN  | module.py   | ! Will use the Trainer's value of None
+09:29:00 | OK    | module.py   | ✓ Optimizer check complete:
++------------+-----------+--------------+-----------+-----------+
+| Opt. Index | Opt. name |     opt      | clip val. | clip alg. |
++------------+-----------+--------------+-----------+-----------+
+|     0      | default_0 | LightningSGD |    None   |    None   |
++------------+-----------+--------------+-----------+-----------+
+09:29:00 | INFO  | utils.py    | ── LogUnusedParametersOnce ───────────────────────
+09:29:00 | INFO  | unused_para~|   registered hooks on 2 leaf parameters
+09:29:00 | WARN  | hardware_mo~| HardwareMonitor: pynvml unavailable (ModuleNotFoundError("No module named 'pynvml'")); GPU metrics disabled.
+09:29:00 | OK    | env_info.py | ✓ Packages: 178 packages collected in 0.31s
+09:29:00 | OK    | unused_para~| ✓ all tracked parameters received gradients on the first backward pass
+09:29:00 | INFO  | unused_para~|   hooks removed, callback disabled
+[Epoch 0/2] done in 0.6s
+[Epoch 1/2] done in 0.1s
+`Trainer.fit` stopped: `max_epochs=2` reached.
+09:29:00 | INFO  | env_info.py |   Waiting for environment dump thread to complete...
+09:29:04 | OK    | env_info.py | ✓ NVIDIA Driver: 570.211.01
+09:29:04 | OK    | env_info.py | ✓ Git: main @ 97054eca
+09:29:04 | INFO  | env_info.py |   Remote: https://github.com/kevinghst/H-JEPA.git
+09:29:04 | WARN  | env_info.py | ! Working directory has uncommitted changes
+09:29:04 | OK    | env_info.py | ✓ Environment: 5 relevant variables captured
+09:29:04 | INFO  | env_info.py |   Serializing environment data...
+09:29:04 | INFO  | env_info.py |   Save directory: /home/songxw/H-JEPA/local_env/fixes_20261027/spt_loop_1
+09:29:04 | INFO  | env_info.py |   Writing environment to temp file...
+09:29:04 | INFO  | env_info.py |   Moving to: environment.json
+09:29:04 | OK    | env_info.py | ✓ Environment file saved (12.0 KB)
+09:29:04 | OK    | env_info.py | ✓ Requirements file saved (3.7 KB)
+09:29:04 | OK    | env_info.py | ✓ Environment dump thread completed successfully
+`weights_only` was not set, defaulting to `False`.
+09:29:04 | INFO  | checkpoint_~|   Checking for non PyTorch modules to save
+09:29:04 | INFO  | atomic_chec~| [atomic_save] → /home/songxw/H-JEPA/local_env/fixes_20261027/loop_accum1.ckpt
+09:29:04 | INFO  | atomic_chec~| [atomic_save] ✓ loop_accum1.ckpt saved (0.0 MiB, serialise=0.00s write=0.00s rename=0.1ms)
+Seed set to 42
+09:29:04 | INFO  | utils.py    | ── Module ────────────────────────────────────────
+09:29:04 | WARN  | module.py   | ! No hyperparameters provided - hyperparameter logging is disabled.
+09:29:04 | INFO  | module.py   |   Setting custom forward method.
+09:29:04 | INFO  | module.py   |   Setting attribute: self.model = <class 'torch.nn.modules.linear.Linear'>
+09:29:04 | INFO  | module.py   |   Setting attribute: self.optim = <class 'dict'>
+09:29:04 | INFO  | module.py   |   No metrics configuration provided - automatic metric tracking is disabled.
+/home/songxw/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/fabric/plugins/environments/slurm.py:204: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python local_env/fixes_20261027/validate_lightning.py ...
+09:29:04 | INFO  | env_info.py |   EnvironmentDumpCallback initialized (filename=environment.json, async=True)
+09:29:04 | INFO  | utils.py    | ── HuggingFaceCheckpoint ─────────────────────────
+09:29:04 | INFO  | hf_models.py|   save_dir: <cyan>hf_exports</cyan>
+09:29:04 | INFO  | hf_models.py|   per_step: <cyan>False</cyan>  (False ⇒ overwrite single 'last/' subdir; True ⇒ keep step_N/)
+Adding 14 callbacks from entry point 'stablepretraining_callbacks': PrintProgressBar, ModuleRegistryCallback, LoggingCallback, EnvironmentDumpCallback, TrainerInfo, SklearnCheckpoint, WandbCheckpoint, TrackioCheckpoint, SwanLabCheckpoint, ModuleSummary, SLURMInfo, LogUnusedParametersOnce, HuggingFaceCheckpointCallback, HardwareMonitor
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+/home/songxw/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/trainer/configuration_validator.py:70: You defined a `validation_step` but have no `val_dataloader`. Skipping val loop.
+09:29:04 | INFO  | utils.py    | ── EnvironmentDump ───────────────────────────────
+09:29:04 | INFO  | env_info.py |   log_dir: /home/songxw/H-JEPA/local_env/fixes_20261027/spt_loop_4
+09:29:04 | INFO  | env_info.py |   Running environment dump in background thread (non-blocking)
+09:29:04 | INFO  | env_info.py |   Collecting environment information...
+09:29:04 | OK    | env_info.py | ✓ Background thread started successfully
+09:29:04 | OK    | env_info.py | ✓ Python 3.11.13
+09:29:04 | INFO  | trainer_inf~|   linking trainer to DataModule
+09:29:04 | OK    | env_info.py | ✓ System: Linux 5.15.0-171-generic (x86_64)
+09:29:04 | WARN  | trainer_inf~| ! Using a custom DataModule, won't have extra info
+09:29:04 | INFO  | env_info.py |   Hostname: 8A100
+09:29:04 | INFO  | utils.py    | ── SklearnCheckpoint ─────────────────────────────
+09:29:04 | INFO  | checkpoint_~|   Sklearn Modules:
+09:29:04 | INFO  | checkpoint_~| 
+┏━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+┃ Module   ┃ Name   ┃ Type   ┃
+┣━━━━━━━━━━╋━━━━━━━━╋━━━━━━━━┫
+┗━━━━━━━━━━┻━━━━━━━━┻━━━━━━━━┛
+09:29:04 | INFO  | utils.py    | ── WandbCheckpoint ───────────────────────────────
+09:29:04 | INFO  | utils.py    | ── TrackioCheckpoint ─────────────────────────────
+09:29:04 | INFO  | utils.py    | ── SwanLabCheckpoint ─────────────────────────────
+09:29:04 | INFO  | utils.py    | ── PyTorch Modules ───────────────────────────────
+09:29:04 | INFO  | trainer_inf~| \n+-------------------+----------------------+--------------------------+--------------------------+---------+
+| Module            | Trainable parameters | Non Trainable parameters | Uninitialized parameters | Buffers |
++-------------------+----------------------+--------------------------+--------------------------+---------+
+|                   |                    2 |                        0 |                        0 |       0 |
+| callbacks_modules |                    0 |                        0 |                        0 |       0 |
+| callbacks_metrics |                    0 |                        0 |                        0 |       0 |
+| model             |                    2 |                        0 |                        0 |       0 |
++-------------------+----------------------+--------------------------+--------------------------+---------+
+09:29:04 | INFO  | utils.py    | ── SLURM ─────────────────────────────────────────
+09:29:04 | INFO  | trainer_inf~|   Job ID: N/A
+09:29:04 | INFO  | trainer_inf~|   Task ID: N/A
+09:29:04 | INFO  | trainer_inf~|   Job Name: N/A
+09:29:04 | INFO  | trainer_inf~|   Nodes: N/A
+09:29:04 | INFO  | trainer_inf~|   Tasks: N/A
+09:29:04 | INFO  | trainer_inf~|   CPUs per node: N/A
+09:29:04 | INFO  | trainer_inf~|   CPUs per task: N/A
+09:29:04 | INFO  | trainer_inf~|   Memory per node: N/A
+09:29:04 | INFO  | trainer_inf~|   Memory per CPU: N/A
+09:29:04 | INFO  | trainer_inf~|   Time limit: N/A
+09:29:04 | INFO  | trainer_inf~|   Partition: N/A
+09:29:04 | INFO  | trainer_inf~|   Node List: N/A
+09:29:04 | INFO  | trainer_inf~|   Submit Directory: N/A
+09:29:04 | INFO  | utils.py    | ── HardwareMonitor ───────────────────────────────
+09:29:04 | INFO  | hardware_mo~|   interval: 10.0s
+09:29:04 | INFO  | hardware_mo~|   prefix:   'hardware/'
+09:29:04 | INFO  | hardware_mo~|   metrics:  cpu=True ram=True disk=True net=True gpu=True
+09:29:04 | INFO  | hardware_mo~|   per-rank: rank 0 only
+09:29:04 | INFO  | utils.py    | ── Optimizers ────────────────────────────────────
+09:29:04 | INFO  | module.py   |   Optimizer specified by Dict with keys ['model_opt']
+09:29:04 | INFO  | module.py   | 
+┏━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Optimizer   ┃ Pattern   ┃   Matched Modules ┃   Param Tensors ┃   Total Params ┃   RequiresGrad Tensors ┃
+┣━━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ model_opt   ┃ model     ┃                 1 ┃               2 ┃              2 ┃                      2 ┃
+┗━━━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━┛
+09:29:04 | INFO  | lr_schedule~| 	User provided a callable with two args, calling with optimizer, module!!
+Loading `train_dataloader` to estimate number of stepping batches.
+/home/songxw/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:434: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=127` in the `DataLoader` to improve performance.
+09:29:04 | INFO  | lr_schedule~| 	User provided a dict
+09:29:04 | INFO  | module.py   |   Configured optimizer 'model_opt' (modules=1, param_tensors=2, total_params=2) with LinearWarmupCosineAnnealingLR scheduler.
+09:29:04 | WARN  | hf_models.py| ! No Hugging Face (PreTrainedModel) submodules found in LightningModule.
+09:29:04 | INFO  | utils.py    | ── Optimizers ────────────────────────────────────
+09:29:04 | INFO  | module.py   |   self.optimizers() gave us 1 optimizers
+09:29:04 | WARN  | module.py   | ! No clip val found for optimizer default_0
+09:29:04 | WARN  | module.py   | ! Will use the Trainer's value of None
+09:29:04 | WARN  | module.py   | ! No clip algorithm found for optimizer default_0
+09:29:04 | WARN  | module.py   | ! Will use the Trainer's value of None
+09:29:04 | OK    | module.py   | ✓ Optimizer check complete:
++------------+-----------+--------------+-----------+-----------+
+| Opt. Index | Opt. name |     opt      | clip val. | clip alg. |
++------------+-----------+--------------+-----------+-----------+
+|     0      | default_0 | LightningSGD |    None   |    None   |
++------------+-----------+--------------+-----------+-----------+
+09:29:04 | INFO  | utils.py    | ── LogUnusedParametersOnce ───────────────────────
+09:29:04 | INFO  | unused_para~|   registered hooks on 2 leaf parameters
+09:29:04 | OK    | unused_para~| ✓ all tracked parameters received gradients on the first backward pass
+09:29:04 | INFO  | unused_para~|   hooks removed, callback disabled
+09:29:04 | WARN  | hardware_mo~| HardwareMonitor: pynvml unavailable (ModuleNotFoundError("No module named 'pynvml'")); GPU metrics disabled.
+[Epoch 0/2] done in 0.1s
+[Epoch 1/2] done in 0.1s
+`Trainer.fit` stopped: `max_epochs=2` reached.
+09:29:04 | INFO  | env_info.py |   Waiting for environment dump thread to complete...
+09:29:04 | OK    | env_info.py | ✓ Packages: 178 packages collected in 0.32s
+09:29:04 | OK    | env_info.py | ✓ NVIDIA Driver: 570.211.01
+09:29:04 | OK    | env_info.py | ✓ Git: main @ 97054eca
+09:29:04 | INFO  | env_info.py |   Remote: https://github.com/kevinghst/H-JEPA.git
+09:29:04 | WARN  | env_info.py | ! Working directory has uncommitted changes
+09:29:04 | OK    | env_info.py | ✓ Environment: 5 relevant variables captured
+09:29:04 | INFO  | env_info.py |   Serializing environment data...
+09:29:04 | INFO  | env_info.py |   Save directory: /home/songxw/H-JEPA/local_env/fixes_20261027/spt_loop_4
+09:29:04 | INFO  | env_info.py |   Writing environment to temp file...
+09:29:04 | INFO  | env_info.py |   Moving to: environment.json
+09:29:04 | OK    | env_info.py | ✓ Environment file saved (12.0 KB)
+09:29:04 | OK    | env_info.py | ✓ Requirements file saved (3.7 KB)
+09:29:04 | OK    | env_info.py | ✓ Environment dump thread completed successfully
+`weights_only` was not set, defaulting to `False`.
+09:29:04 | INFO  | checkpoint_~|   Checking for non PyTorch modules to save
+09:29:04 | INFO  | atomic_chec~| [atomic_save] → /home/songxw/H-JEPA/local_env/fixes_20261027/loop_accum4.ckpt
+09:29:04 | INFO  | atomic_chec~| [atomic_save] ✓ loop_accum4.ckpt saved (0.0 MiB, serialise=0.00s write=0.00s rename=0.0ms)
+[
+  {
+    "accumulation": 1,
+    "optimizer_updates": 64,
+    "scheduler_steps": 64,
+    "scheduler_budget": 64,
+    "last_lr": [
+      0.0
+    ]
+  },
+  {
+    "accumulation": 4,
+    "optimizer_updates": 16,
+    "scheduler_steps": 16,
+    "scheduler_budget": 16,
+    "last_lr": [
+      0.0
+    ]
+  }
+]

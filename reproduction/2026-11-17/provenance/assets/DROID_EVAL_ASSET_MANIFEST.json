@@ -1,0 +1,14 @@
+{
+  "dataset": "jepa-world-models/h-jepa",
+  "dataset_revision": "cc05cb8d2aaf9aec0d5364d073c6369ff760b60b",
+  "archive": "droid_raw_eval16.tar",
+  "archive_sha256": "3f77463d316b325b0827b8acc75095db46feac9e0c3d3637cae2c8b740c6074b",
+  "archive_bytes": 252037120,
+  "archive_removed_after_verification": true,
+  "extracted_root": "droid_raw/1.0.1",
+  "extracted_files": 48,
+  "extracted_bytes": 252280708,
+  "curated_episodes": 16,
+  "validated_against": "/home/songxw/H-JEPA/h_jepa/droid_assets/droid_clips_waypoint_curated16v2_5fps_gw36.json",
+  "validated_at": "2026-10-27"
+}

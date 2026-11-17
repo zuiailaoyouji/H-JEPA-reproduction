@@ -1,0 +1,20 @@
+[
+  {
+    "env": "pusht",
+    "path": "/home/songxw/H-JEPA/h_jepa/assets/eval_trajs/pusht/goal_offset_75_val.pt",
+    "bytes": 564814221,
+    "tasks": 50,
+    "columns": [
+      "action",
+      "episode_idx",
+      "pixels",
+      "proprio",
+      "state",
+      "step_idx"
+    ],
+    "sha256": "588e8db4a6be13e41f00b83332906ac91bc6fda8e3e211a06c8a31431b0d0742",
+    "revision": "cc05cb8d2aaf9aec0d5364d073c6369ff760b60b",
+    "hash_check": "passed",
+    "payload_load": "passed"
+  }
+]

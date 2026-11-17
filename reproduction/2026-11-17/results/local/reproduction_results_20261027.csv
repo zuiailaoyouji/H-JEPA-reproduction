@@ -1,0 +1,5 @@
+environment,model,seed,batch_size,accumulate_grad_batches,training_finished_at,success_rate_pct,successful_tasks,tasks,evaluation_seconds,chunk_size,posthoc_finished,metrics_path
+cube,cube_hjepa_l2,42,32,4,2026-10-27T06:06:12+08:00,30.0,15,50,656.2952420711517,1,True,/home/songxw/hjepa-data/ckpts/cube/cube_hjepa_l2/seed42/planning_eval/epoch_0009/metrics.yaml
+fourroom,fourroom_hjepa_l2,42,32,4,2026-10-26T21:23:09+08:00,100.0,50,50,3916.5778114795685,1,True,/home/songxw/hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42/planning_eval/epoch_0008/metrics.yaml
+fourroom,fourroom_hjepa_l3,42,32,4,2026-10-27T07:37:03+08:00,92.0,46,50,4266.98282122612,1,False,/home/songxw/hjepa-data/ckpts/fourroom/fourroom_hjepa_l3/seed42/planning_eval/epoch_0008/metrics.yaml
+pusht,pusht_hjepa_l2,42,32,4,2026-10-26T22:40:23+08:00,30.0,15,50,2749.44842672348,1,True,/home/songxw/hjepa-data/ckpts/pusht/pusht_hjepa_l2/seed42/planning_eval/epoch_0010/metrics.yaml

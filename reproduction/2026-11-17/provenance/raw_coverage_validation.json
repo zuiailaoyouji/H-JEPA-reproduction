@@ -1,0 +1,22 @@
+{
+  "depth": {
+    "total": 84,
+    "complete": 84,
+    "failed": []
+  },
+  "cost_ladder": {
+    "total": 108,
+    "complete": 108,
+    "failed": []
+  },
+  "droid": {
+    "total": 27,
+    "complete": 27,
+    "failed": []
+  },
+  "probe": {
+    "total": 18,
+    "complete": 18,
+    "failed": []
+  }
+}

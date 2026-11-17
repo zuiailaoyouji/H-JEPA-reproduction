@@ -1,0 +1,5 @@
+environment,model,evaluation_kind,metric_name,training_protocol,model_weight_source,complete_evaluation_count,training_seed_count,training_seeds,planner_seeds,mean,standard_error,statistics_unit
+cube,cube_hjepa_l2,automatic_cube_l2,success_rate_pct,legacy_or_unspecified_b32_accum4,local_training,1,1,[42],[42],30.0,,training seed after averaging planner seeds
+fourroom,fourroom_hjepa_l2,automatic_fourroom_l2,success_rate_pct,legacy_or_unspecified_b32_accum4,local_training,1,1,[42],[42],100.0,,training seed after averaging planner seeds
+fourroom,fourroom_hjepa_l3,automatic_fourroom_l3,success_rate_pct,legacy_or_unspecified_b32_accum4,local_training,1,1,[42],[42],92.0,,training seed after averaging planner seeds
+pusht,pusht_hjepa_l2,automatic_pusht_l2,success_rate_pct,legacy_or_unspecified_b32_accum4,local_training,1,1,[42],[42],30.0,,training seed after averaging planner seeds

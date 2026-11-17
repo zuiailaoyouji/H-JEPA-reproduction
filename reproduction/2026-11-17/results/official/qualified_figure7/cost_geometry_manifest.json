@@ -1,0 +1,20 @@
+{
+  "paper_reference": "Figure 7",
+  "status": "qualified_reproduction",
+  "qualification": "The paper does not publish the anchor coordinates or color normalization. Raw Euclidean distances are retained; the 0-1 visualization divides each level by its maximum.",
+  "checkpoint": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/ant/ant_hjepa_l3/seed42/ant_hjepa_l3_object.ckpt",
+  "dataset": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/visual_antmaze_medium_stitch_val.h5",
+  "states": 502500,
+  "sampling": "all validation states",
+  "anchor_index": 129711,
+  "anchor_xy": [
+    8.002496607549078,
+    7.999732134207266
+  ],
+  "requested_anchor_xy": [
+    8.0,
+    8.0
+  ],
+  "distance": "Euclidean L2 in each level's latent space",
+  "plot_normalization": "per-level distance / per-level maximum distance"
+}

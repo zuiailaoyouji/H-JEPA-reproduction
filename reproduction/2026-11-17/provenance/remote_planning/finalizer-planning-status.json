@@ -1,0 +1,15 @@
+{
+  "state": "complete",
+  "completed": [
+    "aggregate_release",
+    "figure7_cost_geometry",
+    "verify_weights",
+    "tests"
+  ],
+  "excluded_steps": [
+    "aggregate_probes",
+    "plot_frequency_probes"
+  ],
+  "scope": "planning_and_analysis_only",
+  "updated_at": "2026-10-28 23:38:25 CST"
+}

@@ -1,0 +1,103 @@
+{
+  "reason": "User confirmed only planning evaluation and analysis/plots",
+  "cancelled_at": "2026-10-28 20:01:03 CST",
+  "results_retained": true,
+  "previous_status": {
+    "updated_at": "2026-10-28 20:01:00 CST",
+    "pid": 2979782,
+    "release_revision": "08fc8a21208671a87741f2960aeba9b5db4420e0",
+    "total": 237,
+    "complete": 37,
+    "pending": 192,
+    "active": [
+      "probe.fourroom.hjepa_l4.seed42",
+      "probe.ant.hjepa_l4.seed42",
+      "probe.ant.hjepa_l2.seed44",
+      "probe.ant.hjepa_l4.seed43",
+      "probe.ant.hjepa_l4.seed44",
+      "probe.cube.hjepa_l2.seed42",
+      "probe.cube.hjepa_l2.seed43",
+      "probe.cube.hjepa_l2.seed44"
+    ],
+    "active_details": [
+      {
+        "job": "probe.fourroom.hjepa_l4.seed42",
+        "gpu": "0",
+        "pid": 2979856,
+        "elapsed_seconds": 3494,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/fourroom/fourroom_hjepa_l4/seed42/final_probing_decoding_eval_v2/metrics.yaml"
+      },
+      {
+        "job": "probe.ant.hjepa_l4.seed42",
+        "gpu": "1",
+        "pid": 2979858,
+        "elapsed_seconds": 3494,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/ant/ant_hjepa_l4/seed42/final_probing_decoding_eval_v2/metrics.yaml"
+      },
+      {
+        "job": "probe.ant.hjepa_l2.seed44",
+        "gpu": "2",
+        "pid": 2979860,
+        "elapsed_seconds": 3494,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/ant/ant_hjepa_l2/seed44/final_probing_decoding_eval_v2/metrics.yaml"
+      },
+      {
+        "job": "probe.ant.hjepa_l4.seed43",
+        "gpu": "6",
+        "pid": 2979864,
+        "elapsed_seconds": 3494,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/ant/ant_hjepa_l4/seed43/final_probing_decoding_eval_v2/metrics.yaml"
+      },
+      {
+        "job": "probe.ant.hjepa_l4.seed44",
+        "gpu": "7",
+        "pid": 2979865,
+        "elapsed_seconds": 3494,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/ant/ant_hjepa_l4/seed44/final_probing_decoding_eval_v2/metrics.yaml"
+      },
+      {
+        "job": "probe.cube.hjepa_l2.seed42",
+        "gpu": "3",
+        "pid": 3107461,
+        "elapsed_seconds": 1118,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/cube/cube_hjepa_l2/seed42/final_probing_decoding_eval_v2/metrics.yaml"
+      },
+      {
+        "job": "probe.cube.hjepa_l2.seed43",
+        "gpu": "4",
+        "pid": 3107462,
+        "elapsed_seconds": 1118,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/cube/cube_hjepa_l2/seed43/final_probing_decoding_eval_v2/metrics.yaml"
+      },
+      {
+        "job": "probe.cube.hjepa_l2.seed44",
+        "gpu": "5",
+        "pid": 3112985,
+        "elapsed_seconds": 1077,
+        "result": "/tmp/hjepa-migration-20261028/unpacked/hjepa-data/ckpts/cube/cube_hjepa_l2/seed44/final_probing_decoding_eval_v2/metrics.yaml"
+      }
+    ],
+    "waiting_for_data": [],
+    "failures": [],
+    "completed_this_run": [
+      {
+        "job": "probe.pusht.hjepa_l2.seed42",
+        "seconds": 2376.0,
+        "gpu": "3"
+      },
+      {
+        "job": "probe.pusht.hjepa_l2.seed43",
+        "seconds": 2376.0,
+        "gpu": "4"
+      },
+      {
+        "job": "probe.pusht.hjepa_l2.seed44",
+        "seconds": 2416.1,
+        "gpu": "5"
+      }
+    ],
+    "auxiliary": [],
+    "data_download_phase": "complete",
+    "main_world_model_training": "forbidden_by_user"
+  }
+}

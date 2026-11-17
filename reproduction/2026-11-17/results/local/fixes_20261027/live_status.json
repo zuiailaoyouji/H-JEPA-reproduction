@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-10-27T09:42:26.624122+08:00",
+  "jobs": [
+    {
+      "model": "pusht_hjepa_l2",
+      "pid": 679338,
+      "gpu": 0,
+      "pid_command_verified": true,
+      "latest_progress": [
+        "0",
+        "9",
+        "1000",
+        "13292",
+        "1.8"
+      ],
+      "fatal_errors": [],
+      "metric_rows": 40,
+      "nonfinite_metrics": [],
+      "last_metrics": {
+        "step": "999",
+        "epoch": "0",
+        "fit/loss": "1.8447141647338867",
+        "hparams/lr_default_0": "4.180601899861358e-05"
+      },
+      "training_only_hours_estimate": 18.3
+    },
+    {
+      "model": "cube_hjepa_l2",
+      "pid": 679339,
+      "gpu": 1,
+      "pid_command_verified": true,
+      "latest_progress": [
+        "0",
+        "8",
+        "1050",
+        "12785",
+        "1.9"
+      ],
+      "fatal_errors": [],
+      "metric_rows": 42,
+      "nonfinite_metrics": [],
+      "last_metrics": {
+        "step": "1049",
+        "epoch": "0",
+        "fit/loss": "1.2806097269058228",
+        "hparams/lr_default_0": "4.9999991460936144e-05"
+      },
+      "training_only_hours_estimate": 14.8
+    },
+    {
+      "model": "fourroom_hjepa_l2",
+      "pid": 679340,
+      "gpu": 2,
+      "pid_command_verified": true,
+      "latest_progress": [
+        "0",
+        "7",
+        "1000",
+        "7150",
+        "1.8"
+      ],
+      "fatal_errors": [],
+      "metric_rows": 40,
+      "nonfinite_metrics": [],
+      "last_metrics": {
+        "step": "999",
+        "epoch": "0",
+        "fit/loss": "2.9442434310913086",
+        "hparams/lr_default_0": "4.998744043405168e-05"
+      },
+      "training_only_hours_estimate": 7.6
+    },
+    {
+      "model": "ant_hjepa_l2",
+      "pid": 679341,
+      "gpu": 3,
+      "pid_command_verified": true,
+      "latest_progress": [
+        "0",
+        "5",
+        "1100",
+        "71875",
+        "2.0"
+      ],
+      "fatal_errors": [],
+      "metric_rows": 44,
+      "nonfinite_metrics": [],
+      "last_metrics": {
+        "step": "1099",
+        "epoch": "0",
+        "fit/loss": "2.1281545162200928",
+        "hparams/lr_default_0": "1.5307541616493836e-05"
+      },
+      "training_only_hours_estimate": 49.8
+    }
+  ],
+  "gpu_snapshot": "0, 6701 MiB, 87 %\n1, 6701 MiB, 84 %\n2, 7401 MiB, 99 %\n3, 4575 MiB, 85 %\n4, 10 MiB, 0 %\n5, 33455 MiB, 0 %\n6, 10 MiB, 0 %\n"
+}

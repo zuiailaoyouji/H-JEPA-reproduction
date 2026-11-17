@@ -1,0 +1,7 @@
+{
+  "level1_sampling": "take every frameskip-th state independently within each episode",
+  "normalization": "zero mean and unit variance per episode and scalar dimension",
+  "spectrum_weight": "squared rFFT magnitude (periodogram), excluding DC",
+  "entity_pooling": "sum weighted-frequency numerators and spectral-power denominators across dimensions and episodes",
+  "paper_disclosure": "Appendix F specifies amplitude normalization, level-1 sampling, and pooling over episodes, but does not publish the FFT weighting or exact pooling formula; periodogram weighting is selected because it matches the reported Ant per-episode ratio statistics much better than magnitude weighting."
+}

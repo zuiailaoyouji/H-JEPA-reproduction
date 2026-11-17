@@ -1,0 +1,57 @@
+{
+  "release_tag": "reproduction-2026-11-17",
+  "release_url": "https://github.com/zuiailaoyouji/H-JEPA-reproduction/releases/tag/reproduction-2026-11-17",
+  "archives": [
+    {
+      "name": "raw_results.tar.zst",
+      "bytes": 9488082,
+      "sha256": "18ee640aa90e69b8159560f0ebc0c186060a4660633347f510c3caf07c95d03c",
+      "purpose": "complete local result tree",
+      "parts": []
+    },
+    {
+      "name": "fixed_eval_tasks.tar.zst",
+      "bytes": 53011492,
+      "sha256": "9ef6a727ec4ec9c844e6b955a26d4e641f08afc6ac13c1426b7be672f4ecfcb2",
+      "purpose": "exact fixed evaluation task tensors",
+      "parts": []
+    },
+    {
+      "name": "local_checkpoints.tar.zst",
+      "bytes": 2280024774,
+      "sha256": "70e137c299304ced11c80ea54557de53751701c6c10497992f9e873b1a51e1cb",
+      "purpose": "31 locally produced training and decoder checkpoint files",
+      "parts": [
+        {
+          "name": "local_checkpoints.tar.zst.part001",
+          "bytes": 1073741824,
+          "sha256": "13674641b629b2f6fa578834dc3c6bd85c189d4981c911b254adf3c9c6bc753e"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part002",
+          "bytes": 1073741824,
+          "sha256": "f9ec75e9bf2f1542170c6695ed406dd277764621057679927af2b2d5ccdeb3fa"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part003",
+          "bytes": 132541126,
+          "sha256": "0f701a4e97442d2e532c6cdae294918dd830571c3c9f4edbd154c7239f483597"
+        }
+      ]
+    },
+    {
+      "name": "remote_planning_results_20261029.zip",
+      "bytes": 57900691,
+      "sha256": "9ed4a78ab2cd209770e40725084f12eadf4a5440f55c97a65d453907c9d0342d",
+      "purpose": "original remote planning audit bundle",
+      "parts": []
+    },
+    {
+      "name": "cost_geometry.csv.gz",
+      "bytes": 35069904,
+      "sha256": "9d0ed96ec0373798a43adaecccc6d8cfb89f44a0435f77e79d62e7c79247daac",
+      "purpose": "losslessly compressed 502500-state Figure 7 data",
+      "parts": []
+    }
+  ]
+}

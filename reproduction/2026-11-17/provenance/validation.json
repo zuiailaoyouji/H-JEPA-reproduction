@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "source_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider code/h_jepa/tests",
+    "passed": 25,
+    "warnings": 2
+  },
+  "planning_tasks_enumerated": 237,
+  "main_document_relative_links": "all resolve",
+  "secret_pattern_scan": "no findings",
+  "historical_remote_manifest": {
+    "payload_files_verified": 11344,
+    "total_files_in_original_archive": 11346
+  },
+  "validation_scope": "Archival and existing unit tests; complete GPU experiments were not rerun.",
+  "restored_raw_files_verified": 12255,
+  "restored_local_checkpoints_verified": 31,
+  "restored_fixed_task_files_verified": 5,
+  "raw_cell_completeness_verified": 237,
+  "reaggregated_summary_tables": "Planning and probe summaries are byte/value-equivalent; raw CSV provenance paths change with the restored data directory."
+}

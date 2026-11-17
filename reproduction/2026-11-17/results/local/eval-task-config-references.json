@@ -1,0 +1,38 @@
+{
+  "assets/eval_trajs/ant/expert_grid_d3_n50.pt": [
+    "ant_flat.yaml",
+    "ant_l2.yaml",
+    "ant_l2_project.yaml",
+    "ant_l3.yaml",
+    "ant_l3_project.yaml",
+    "ant_l4.yaml",
+    "ant_l4_project.yaml"
+  ],
+  "assets/eval_trajs/ogbench/goal_offset_20_pickup_val.pt": [
+    "cube_flat.yaml",
+    "cube_l2.yaml",
+    "cube_l2_project.yaml",
+    "cube_l3.yaml",
+    "cube_l3_project.yaml",
+    "cube_l4.yaml",
+    "cube_l4_project.yaml"
+  ],
+  "assets/eval_trajs/fourroom/fourroom_tp35_cross2_goal75_n50_d1.pt": [
+    "fourroom_flat.yaml",
+    "fourroom_l2.yaml",
+    "fourroom_l2_project.yaml",
+    "fourroom_l3.yaml",
+    "fourroom_l3_project.yaml",
+    "fourroom_l4.yaml",
+    "fourroom_l4_project.yaml"
+  ],
+  "assets/eval_trajs/pusht/goal_offset_75_val.pt": [
+    "pusht_flat.yaml",
+    "pusht_l2.yaml",
+    "pusht_l2_project.yaml",
+    "pusht_l3.yaml",
+    "pusht_l3_project.yaml",
+    "pusht_l4.yaml",
+    "pusht_l4_project.yaml"
+  ]
+}

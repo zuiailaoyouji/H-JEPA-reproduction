@@ -1,0 +1,600 @@
+diff --git a/.gitignore b/.gitignore
+index 7404501..4b9e76e 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -2,6 +2,7 @@ __pycache__/
+ *.py[cod]
+ *.egg-info/
+ .venv/
++local_env/
+ 
+ # run outputs
+ experiments/
+diff --git a/docs/RESULTS.md b/docs/RESULTS.md
+index 89b91f3..14410bc 100644
+--- a/docs/RESULTS.md
++++ b/docs/RESULTS.md
+@@ -15,9 +15,9 @@ The numbers in the column headings indicate model depth.
+ 
+ | | LeWM | H-JEPA 2 | H-JEPA 3 | H-JEPA 4 | HWM 2 | HWM 3 | HWM 4 |
+ |---|---|---|---|---|---|---|---|
+-| Visual AntMaze | 18.0 ± 3.5 | 39.3 ± 3.7 | 73.3 ± 3.5 | 67.3 ± 2.4 | 34.0 ± 1.2 | 38.7 ± 3.5 | 14.0 ± 2.0 |
+-| FourRoom Distractors | 40.7 ± 6.8 | 81.3 ± 6.7 | 96.0 ± 1.1 | 88.0 ± 2.3 | 75.3 ± 3.3 | 99.3 ± 0.7 | 92.7 ± 4.4 |
+-| OGBench Cube | 32.0 ± 6.1 | 47.3 ± 2.7 | 60.0 ± 5.0 | 62.7 ± 2.4 | 46.7 ± 2.9 | 53.3 ± 5.2 | 34.0 ± 3.1 |
++| Visual AntMaze | 18.0 ± 3.5 | 39.3 ± 3.7 | 73.3 ± 3.5 | 63.3 ± 7.7 | 34.0 ± 1.2 | 38.7 ± 3.5 | 14.0 ± 2.0 |
++| FourRoom Distractors | 40.7 ± 6.8 | 81.3 ± 6.7 | 96.0 ± 1.1 | 80.0 ± 4.0 | 75.3 ± 3.3 | 99.3 ± 0.7 | 92.7 ± 4.4 |
++| OGBench Cube | 32.0 ± 6.1 | 47.3 ± 2.7 | 60.0 ± 5.0 | 55.3 ± 4.4 | 46.7 ± 2.9 | 53.3 ± 5.2 | 34.0 ± 3.1 |
+ | Push-T | 40.0 ± 2.3 | 45.3 ± 1.3 | 17.3 ± 3.5 | 0.7 ± 0.7 | 42.0 ± 6.4 | 12.0 ± 2.0 | 0.0 ± 0.0 |
+ 
+ 
+diff --git a/h_jepa/config/eval/droid_l2.yaml b/h_jepa/config/eval/droid_l2.yaml
+index 2c62448..ded7dc0 100644
+--- a/h_jepa/config/eval/droid_l2.yaml
++++ b/h_jepa/config/eval/droid_l2.yaml
+@@ -41,7 +41,7 @@ solver:
+       early_stop_rel_delta: 0.01
+       batch_size: 1
+       var_scale: 1.5
+-      num_samples: 4
++      num_samples: 16
+       action_noise: 0
+       action_clip_sigma: 2.0
+       device: cuda
+diff --git a/h_jepa/config/probing/ant.yaml b/h_jepa/config/probing/ant.yaml
+index b3e92b0..3d5d1c9 100644
+--- a/h_jepa/config/probing/ant.yaml
++++ b/h_jepa/config/probing/ant.yaml
+@@ -1,5 +1,5 @@
+ policy: null
+-output_subdir: final_probing_decoding_eval
++output_subdir: final_probing_decoding_eval_v2
+ seed: 42
+ device: auto
+ cache_dir: ${oc.env:HJEPA_HOME}
+@@ -14,6 +14,8 @@ loader:
+   shuffle: true
+ optimizer:
+   lr: 0.001
++  probe_lr: 0.001
++  decoder_lr: 0.001
+   weight_decay: 0.0001
+ decoder:
+   depth: 4
+diff --git a/h_jepa/config/probing/cube.yaml b/h_jepa/config/probing/cube.yaml
+index 448a3e8..b678116 100644
+--- a/h_jepa/config/probing/cube.yaml
++++ b/h_jepa/config/probing/cube.yaml
+@@ -1,5 +1,5 @@
+ policy: null
+-output_subdir: final_probing_decoding_eval
++output_subdir: final_probing_decoding_eval_v2
+ seed: 42
+ device: auto
+ cache_dir: ${oc.env:HJEPA_HOME}
+@@ -14,6 +14,8 @@ loader:
+   shuffle: true
+ optimizer:
+   lr: 0.001
++  probe_lr: 0.001
++  decoder_lr: 0.0001
+   weight_decay: 0.0001
+ decoder:
+   depth: 4
+diff --git a/h_jepa/config/probing/fourroom.yaml b/h_jepa/config/probing/fourroom.yaml
+index 9b5422c..7b3ac7e 100644
+--- a/h_jepa/config/probing/fourroom.yaml
++++ b/h_jepa/config/probing/fourroom.yaml
+@@ -1,5 +1,5 @@
+ policy: null
+-output_subdir: final_probing_decoding_eval
++output_subdir: final_probing_decoding_eval_v2
+ seed: 42
+ device: auto
+ cache_dir: ${oc.env:HJEPA_HOME}
+@@ -14,6 +14,8 @@ loader:
+   shuffle: true
+ optimizer:
+   lr: 0.001
++  probe_lr: 0.001
++  decoder_lr: 0.0001
+   weight_decay: 0.0001
+ decoder:
+   depth: 4
+diff --git a/h_jepa/config/probing/pusht.yaml b/h_jepa/config/probing/pusht.yaml
+index e04166c..d07eaee 100644
+--- a/h_jepa/config/probing/pusht.yaml
++++ b/h_jepa/config/probing/pusht.yaml
+@@ -1,5 +1,5 @@
+ policy: null
+-output_subdir: final_probing_decoding_eval
++output_subdir: final_probing_decoding_eval_v2
+ seed: 42
+ device: auto
+ cache_dir: ${oc.env:HJEPA_HOME}
+@@ -14,6 +14,8 @@ loader:
+   shuffle: true
+ optimizer:
+   lr: 0.001
++  probe_lr: 0.001
++  decoder_lr: 0.0001
+   weight_decay: 0.0001
+ decoder:
+   depth: 4
+diff --git a/h_jepa/config/train/base/ant.yaml b/h_jepa/config/train/base/ant.yaml
+index 88b8fc4..0eefd8c 100644
+--- a/h_jepa/config/train/base/ant.yaml
++++ b/h_jepa/config/train/base/ant.yaml
+@@ -33,6 +33,10 @@ hydra:  # Hydra logs inside the run dir (main_hjepa.py run_dir), not in the laun
+   run:
+     dir: ${oc.env:HJEPA_HOME,${oc.env:HOME}/.stable_worldmodel}/ckpts/${subdir}/hydra
+ quick_debug: false
++training_protocol_version: 2
++memory:
++  encoder_checkpointing: true
++  encoder_frame_chunk_size: 128
+ num_workers: 6
+ seed: 42
+ img_size: 64
+@@ -43,11 +47,12 @@ save_every_n_epochs: 1
+ resume_every_n_steps: 2000  # full-state resume checkpoint (0 = off), see utils.ResumeCheckpoint
+ trainer:
+   max_epochs: 5
+-  devices: auto
++  devices: 1
+   accelerator: gpu
+   precision: bf16
+   gradient_clip_val: 1.0
+   num_sanity_val_steps: 1
++  accumulate_grad_batches: 1
+ loader:
+   batch_size: 128
+   num_workers: ${num_workers}
+@@ -78,7 +83,7 @@ planning_eval:
+ final_probing_decoding_eval:
+   enabled: true
+   config_name: ant
+-  output_subdir: final_probing_decoding_eval
++  output_subdir: final_probing_decoding_eval_v2
+   overrides:
+     level1:
+       train_decoder: true
+diff --git a/h_jepa/config/train/base/cube.yaml b/h_jepa/config/train/base/cube.yaml
+index 878b066..d710810 100644
+--- a/h_jepa/config/train/base/cube.yaml
++++ b/h_jepa/config/train/base/cube.yaml
+@@ -56,6 +56,10 @@ data:
+       frameskip: 5
+       num_steps: ${eval:'${level1.wm.history_size} + ${level1.wm.rollout_n}'}
+ quick_debug: false
++training_protocol_version: 2
++memory:
++  encoder_checkpointing: true
++  encoder_frame_chunk_size: 128
+ output_model_name: model
+ env: cube
+ subdir: ${env}/${output_model_name}/seed${seed}
+@@ -72,17 +76,18 @@ save_every_n_epochs: 1
+ resume_every_n_steps: 2000  # full-state resume checkpoint (0 = off), see utils.ResumeCheckpoint
+ trainer:
+   max_epochs: 8
+-  devices: auto
++  devices: 1
+   accelerator: gpu
+   precision: bf16-mixed
+   gradient_clip_val: 1.0
+   num_sanity_val_steps: 1
++  accumulate_grad_batches: 1
+ loader:
+   batch_size: 128
+   num_workers: ${num_workers}
+   drop_last: true
+   persistent_workers: true
+-  prefetch_factor: 8
++  prefetch_factor: 2
+   pin_memory: true
+   shuffle: true
+ optimizer:
+@@ -107,7 +112,7 @@ planning_eval:
+ final_probing_decoding_eval:
+   enabled: true
+   config_name: cube
+-  output_subdir: final_probing_decoding_eval
++  output_subdir: final_probing_decoding_eval_v2
+   overrides:
+     level1:
+       train_decoder: true
+diff --git a/h_jepa/config/train/base/fourroom.yaml b/h_jepa/config/train/base/fourroom.yaml
+index c0168b4..7a8cfea 100644
+--- a/h_jepa/config/train/base/fourroom.yaml
++++ b/h_jepa/config/train/base/fourroom.yaml
+@@ -21,6 +21,10 @@ data:
+       frameskip: 5
+       num_steps: ${eval:'${level1.wm.history_size} + ${level1.wm.rollout_n}'}
+ quick_debug: false
++training_protocol_version: 2
++memory:
++  encoder_checkpointing: true
++  encoder_frame_chunk_size: 128
+ output_model_name: model
+ env: fourroom
+ subdir: ${env}/${output_model_name}/seed${seed}
+@@ -37,17 +41,18 @@ save_every_n_epochs: 1
+ resume_every_n_steps: 2000  # full-state resume checkpoint (0 = off), see utils.ResumeCheckpoint
+ trainer:
+   max_epochs: 7
+-  devices: auto
++  devices: 1
+   accelerator: gpu
+   precision: bf16-mixed
+   gradient_clip_val: 1.0
+   num_sanity_val_steps: 1
++  accumulate_grad_batches: 1
+ loader:
+   batch_size: 128
+   num_workers: ${num_workers}
+   drop_last: true
+   persistent_workers: true
+-  prefetch_factor: 8
++  prefetch_factor: 2
+   pin_memory: true
+   shuffle: true
+ optimizer:
+@@ -72,7 +77,7 @@ planning_eval:
+ final_probing_decoding_eval:
+   enabled: true
+   config_name: fourroom
+-  output_subdir: final_probing_decoding_eval
++  output_subdir: final_probing_decoding_eval_v2
+   overrides:
+     level1:
+       train_decoder: true
+diff --git a/h_jepa/config/train/base/pusht.yaml b/h_jepa/config/train/base/pusht.yaml
+index 602eb3b..5a3db3b 100644
+--- a/h_jepa/config/train/base/pusht.yaml
++++ b/h_jepa/config/train/base/pusht.yaml
+@@ -36,6 +36,10 @@ data:
+       frameskip: 5
+       num_steps: ${eval:'${level1.wm.history_size} + ${level1.wm.rollout_n}'}
+ quick_debug: false
++training_protocol_version: 2
++memory:
++  encoder_checkpointing: true
++  encoder_frame_chunk_size: 128
+ output_model_name: model
+ env: pusht
+ subdir: ${env}/${output_model_name}/seed${seed}
+@@ -52,17 +56,18 @@ save_every_n_epochs: 1
+ resume_every_n_steps: 2000  # full-state resume checkpoint (0 = off), see utils.ResumeCheckpoint
+ trainer:
+   max_epochs: 9
+-  devices: auto
++  devices: 1
+   accelerator: gpu
+   precision: bf16-mixed
+   gradient_clip_val: 1.0
+   num_sanity_val_steps: 1
++  accumulate_grad_batches: 1
+ loader:
+   batch_size: 128
+   num_workers: ${num_workers}
+   drop_last: true
+   persistent_workers: true
+-  prefetch_factor: 8
++  prefetch_factor: 2
+   pin_memory: true
+   shuffle: true
+ optimizer:
+@@ -87,7 +92,7 @@ planning_eval:
+ final_probing_decoding_eval:
+   enabled: true
+   config_name: pusht
+-  output_subdir: final_probing_decoding_eval
++  output_subdir: final_probing_decoding_eval_v2
+   overrides:
+     level1:
+       train_decoder: true
+diff --git a/h_jepa/droid_eval.py b/h_jepa/droid_eval.py
+index 9fc7995..17cc941 100644
+--- a/h_jepa/droid_eval.py
++++ b/h_jepa/droid_eval.py
+@@ -14,7 +14,7 @@ Paper cells (planner lr per level, level 1 first):
+   HWM       --config-name droid_l2 solver.solvers.level1.optimizer_kwargs.lr=0.01
+             solver.solvers.level2.optimizer_kwargs.lr=0.3
+   H-JEPA    --config-name droid_l2 solver.solvers.level1.optimizer_kwargs.lr=0.01
+-            solver.solvers.level2.optimizer_kwargs.lr=0.01
++            solver.solvers.level2.optimizer_kwargs.lr=0.3
+ 
+ Outputs under output.dir (relative: to the ckpt dir): ep_{k}/actions.pt ({"planned", "gt",
+ "grasp_pos"}, raw units; k = manifest index), ep_{k}/planning_compute.json, plan_config.yaml and
+@@ -191,4 +191,3 @@ def run_clip_eval(cfg: DictConfig, model=None, results_dir: str | Path | None =
+     print(f"ATE end_distance_xyz: {agg['ate/end_distance_xyz']:.4f} m")
+     print(f"Frechet skill mean: {agg['frechet/skill_mean']:.4f}")
+     print(f"Frechet skill median (weighted): {agg['frechet/skill_median_weighted']:.4f}")
+-
+diff --git a/h_jepa/final_probing_decoding_eval.py b/h_jepa/final_probing_decoding_eval.py
+index b1e496c..dfe94c2 100644
+--- a/h_jepa/final_probing_decoding_eval.py
++++ b/h_jepa/final_probing_decoding_eval.py
+@@ -195,10 +195,13 @@ def _flatten_time(x: torch.Tensor) -> torch.Tensor:
+ 
+ def _optimizer(heads, cfg):
+     param_groups = []
+-    for module in (heads.probers, heads.decoders):
++    for name, module, lr_key in (("probes", heads.probers, "probe_lr"),
++                                 ("decoders", heads.decoders, "decoder_lr")):
+         parameters = [param for param in module.parameters() if param.requires_grad]
+         if parameters:
+-            param_groups.append({"params": parameters})
++            param_groups.append({"params": parameters, "name": name,
++                                 "lr": float(cfg.optimizer.get(lr_key, cfg.optimizer.lr))})
++    logging.info(f"Posthoc optimizer groups: {[(g['name'], g['lr']) for g in param_groups]}")
+     return torch.optim.AdamW(
+         param_groups,
+         lr=float(cfg.optimizer.lr),
+@@ -401,7 +404,7 @@ def _unnormalize_image_tensor(images: torch.Tensor) -> torch.Tensor:
+     return torch.clamp(images * std + mean, 0, 1)
+ 
+ 
+-def _collate_visualization_batch(dataset, num_frames=32):
++def _collate_visualization_batch(dataset, num_frames=1):
+     num_frames = min(num_frames, len(dataset))
+     if num_frames <= 0:
+         return None
+@@ -432,7 +435,11 @@ def _decoder_visualization_figures(heads, dataset, device):
+     pixels = pixels.float()
+ 
+     payload = {}
+-    for name, decoder in heads.decoders.items():
++    decoded_by_level = []
++    frames = (_unnormalize_image_tensor(pixels).detach().cpu() * 255).byte().numpy()
++    for name, decoder in sorted(
++        heads.decoders.items(), key=lambda item: int(heads.decoder_metadata[item[0]]["level"])
++    ):
+         meta = heads.decoder_metadata[name]
+         level = int(meta["level"])
+         embed = _flatten_time(encoded[f"embed_{level}"])
+@@ -443,10 +450,10 @@ def _decoder_visualization_figures(heads, dataset, device):
+             *decoded.shape[1:],
+         )
+ 
+-        frames = (_unnormalize_image_tensor(pixels).detach().cpu() * 255).byte().numpy()
+         frames_decoded = (
+             _unnormalize_image_tensor(decoded).detach().cpu() * 255
+         ).byte().numpy()
++        decoded_by_level.append((level, frames_decoded))
+         fig = _build_unroll_figure(frames, frames_decoded, "Enc")
+         payload[
+             _prefixed(
+@@ -455,6 +462,19 @@ def _decoder_visualization_figures(heads, dataset, device):
+             )
+         ] = fig
+ 
++    if decoded_by_level:
++        fig, axes = plt.subplots(1, len(decoded_by_level) + 1, figsize=(2.2 * (len(decoded_by_level) + 1), 2.2))
++        axes = np.atleast_1d(axes)
++        axes[0].imshow(np.transpose(frames[0, 0], (1, 2, 0)))
++        axes[0].set_title("observation")
++        for axis, (level, decoded) in zip(axes[1:], decoded_by_level):
++            axis.imshow(np.transpose(decoded[0, 0], (1, 2, 0)))
++            axis.set_title(f"level {level}")
++        for axis in axes:
++            axis.axis("off")
++        fig.tight_layout(pad=0.25)
++        payload[_prefixed(FINAL_PROBING_DECODING_EVAL_PREFIX, "eval/level_decodings")] = fig
++
+     return payload
+ 
+ 
+diff --git a/h_jepa/main_hjepa.py b/h_jepa/main_hjepa.py
+index c826b5b..0b0ec8e 100644
+--- a/h_jepa/main_hjepa.py
++++ b/h_jepa/main_hjepa.py
+@@ -15,6 +15,10 @@ from omegaconf import OmegaConf
+ from torch.utils.data import DataLoader
+ 
+ from hjepa_utils import create_world_model, hjepa_forward
++from training_runtime import (
++    accumulation_factor, configure_encoder_memory, create_training_scheduler,
++    training_protocol, validate_run_directory,
++)
+ from utils import (
+     ModelObjectCallBack,
+     DebugArtifactCleanupCallback,
+@@ -40,6 +44,16 @@ IMAGENET_STD = (0.229, 0.224, 0.225)
+ 
+ 
+ class GradClipModule(spt.Module):
++    def on_save_checkpoint(self, checkpoint):
++        checkpoint["hjepa_training_protocol"] = training_protocol(self._train_cfg)
++
++    def on_load_checkpoint(self, checkpoint):
++        if checkpoint.get("hjepa_training_protocol") != training_protocol(self._train_cfg):
++            raise ValueError(
++                "Legacy/different checkpoint protocol: use a new run directory. "
++                "Do not silently resume the old scheduler or relabel batch32 training."
++            )
++
+     def clip_gradients(self, optimizer, gradient_clip_val=None, gradient_clip_algorithm=None):
+         if not self._train_cfg.get("grad_clip_per_level", False):
+             return super().clip_gradients(optimizer, gradient_clip_val, gradient_clip_algorithm)
+@@ -139,13 +153,18 @@ def _normalize_uint8_images_on_device(batch):
+ 
+ 
+ def _hjepa_training_forward(self, batch, stage, cfg):
+-    return hjepa_forward(
++    output = hjepa_forward(
+         self,
+         batch,
+         stage,
+         cfg,
+         normalize_batch=_normalize_uint8_images_on_device,
+     )
++    if stage == "fit":
++        # SPT's manual backward does not automatically scale accumulated losses.
++        # The losses logged inside hjepa_forward keep their original units.
++        output["loss"] = output["loss"] / accumulation_factor(self.trainer)
++    return output
+ 
+ 
+ @hydra.main(version_base=None, config_path="config/train", config_name=None)
+@@ -155,6 +174,13 @@ def run(cfg):
+     #########################
+ 
+     _configure_runtime_performance()
++    pl.seed_everything(int(cfg.seed), workers=True)
++
++    rand_str = f"{datetime.now():%Y%m%d_%H%M%S}_{uuid.uuid4().hex[:8]}"
++    run_id = cfg.get("subdir") or rand_str
++    ckpt_root = Path(os.getenv("HJEPA_HOME", str(swm.data.utils.get_cache_dir()))) / "ckpts"
++    run_dir = ckpt_root / run_id
++    validate_run_directory(run_dir, cfg)
+ 
+     cache_dir = os.environ.get("HJEPA_HOME", None)
+ 
+@@ -199,6 +225,8 @@ def run(cfg):
+ 
+     normalizer_artifact = build_normalizer_artifact(cfg, train_dataset)
+     world_model, losses = create_world_model(cfg)
++    configured = configure_encoder_memory(world_model, cfg)
++    logging.info(f"Image backbones configured: {configured}; protocol={training_protocol(cfg)}")
+     world_model.normalizer_artifact = normalizer_artifact
+     models = {
+         "model": world_model,
+@@ -206,27 +234,18 @@ def run(cfg):
+ 
+     optimizers = {}
+     hjepa_optimizer = _build_hjepa_optimizer_factory(world_model, cfg)
+-    scheduler = {"type": "LinearWarmupCosineAnnealingLR"}
+-    warmup_ratio = cfg.optimizer.get("warmup_ratio", None)
+-    if warmup_ratio is not None:
+-        def scheduler(optimizer, module):
+-            total_steps = int(module.trainer.estimated_stepping_batches)
+-            return spt.optim.create_scheduler(
+-                optimizer,
+-                {
+-                    "type": "LinearWarmupCosineAnnealingLR",
+-                    "warmup_steps": max(1, round(float(warmup_ratio) * total_steps)),
+-                    "max_steps": total_steps,
+-                },
+-                module,
+-            )
++    def scheduler(optimizer, module):
++        warmup_ratio = float(cfg.optimizer.get("warmup_ratio", 0.01))
++        result = create_training_scheduler(optimizer, module, warmup_ratio)
++        logging.info(f"Scheduler budget: {result.max_steps} optimizer updates; warmup={warmup_ratio}")
++        return result
+ 
+     for model_name in models.keys():
+         optimizers[f"{model_name}_opt"] = {
+             "modules": str(model_name),
+             "optimizer": hjepa_optimizer,
+             "scheduler": scheduler,
+-            "interval": "epoch",
++            "interval": "step",
+         }
+ 
+     data_module = spt.data.DataModule(train=train, val=val)
+@@ -246,11 +265,6 @@ def run(cfg):
+     # run_id = cfg.get("subdir") or ""
+ 
+     # use rand_str to ensure unique run_dir for each run if subdir is not specified in cfg.
+-    rand_str = f"{datetime.now():%Y%m%d_%H%M%S}_{uuid.uuid4().hex[:8]}"
+-    run_id = cfg.get("subdir") or rand_str
+-
+-    ckpt_root = Path(os.getenv("HJEPA_HOME", str(swm.data.utils.get_cache_dir()))) / "ckpts"
+-    run_dir = ckpt_root / run_id
+     spt.set(cache_dir=str(run_dir / "spt"))
+     logging.info(f"🫆🫆🫆 Run ID: {run_id} 🫆🫆🫆")
+ 
+diff --git a/h_jepa/models/jepa.py b/h_jepa/models/jepa.py
+index c3b039f..fc4cb48 100644
+--- a/h_jepa/models/jepa.py
++++ b/h_jepa/models/jepa.py
+@@ -4,6 +4,7 @@ import torch
+ import torch.nn.functional as F
+ from einops import rearrange
+ from torch import nn
++from torch.utils.checkpoint import checkpoint
+ 
+ def detach_clone(v):
+     return v.detach().clone() if torch.is_tensor(v) else v
+@@ -52,8 +53,21 @@ class ProjectedEncoder(nn.Module):
+         self.projector = projector or nn.Identity()
+ 
+     def forward(self, x, *, allow_cls_token: bool = True):
+-        output = _run_encoder(self.encoder, x)
+-        hidden = _split_encoder_output(output, allow_cls_token=allow_cls_token)
++        def encode_images(images):
++            output = _run_encoder(self.encoder, images)
++            return _split_encoder_output(output, allow_cls_token=allow_cls_token)
++
++        if (x.ndim == 4 and self.training and torch.is_grad_enabled()
++                and getattr(self, "checkpoint_encoder", False)):
++            # Images are independent inside the ViT. Concatenate BEFORE the
++            # projector so its BatchNorm sees the entire real batch exactly once.
++            # Old pickled models lack these optional attributes and still load.
++            hidden = torch.cat([
++                checkpoint(encode_images, images, use_reentrant=False, preserve_rng_state=True)
++                for images in x.split(self.encoder_frame_chunk_size, dim=0)
++            ], dim=0)
++        else:
++            hidden = encode_images(x)
+         return self.projector(hidden)
+ 
+     def encode_info(self, info, *, key: str, allow_cls_token: bool = True):
+diff --git a/h_jepa/utils.py b/h_jepa/utils.py
+index 8b17327..3b73788 100644
+--- a/h_jepa/utils.py
++++ b/h_jepa/utils.py
+@@ -1,4 +1,5 @@
+ import logging
++import re
+ import threading
+ import torch
+ from pathlib import Path
+@@ -65,7 +66,44 @@ def load_training_config_for_checkpoint(
+     ckpt_path: str | Path,
+     config_path: str | Path | None = None,
+ ):
+-    return OmegaConf.load(resolve_checkpoint_config_path(ckpt_path, config_path))
++    if config_path is not None or (Path(ckpt_path).expanduser().parent / "config.yaml").exists():
++        return OmegaConf.load(resolve_checkpoint_config_path(ckpt_path, config_path))
++
++    # Released checkpoints intentionally contain only the object checkpoint and normalizer.
++    # Their standard <env>/<env>_<model>/seed<seed> layout uniquely identifies the Hydra
++    # training config, so evaluation and post-hoc probes can use the release directly.
++    checkpoint = Path(ckpt_path).expanduser().resolve()
++    model_name = checkpoint.parent.parent.name
++    config_dir = Path(__file__).resolve().parent / "config" / "train"
++    config_file = config_dir / f"{model_name}.yaml"
++    if not config_file.exists():
++        raise FileNotFoundError(
++            f"Training config not found beside {checkpoint}, and no release config "
++            f"could be inferred at {config_file}"
++        )
++    if not OmegaConf.has_resolver("eval"):
++        OmegaConf.register_new_resolver("eval", eval)
++    raw = OmegaConf.load(config_file)
++    defaults = list(raw.get("defaults", []))
++    del raw["defaults"]
++    pieces = []
++    for entry in defaults:
++        if entry == "_self_":
++            pieces.append(raw)
++        elif isinstance(entry, str):
++            inherited = config_dir / f"{entry}.yaml"
++            if not inherited.exists():
++                raise FileNotFoundError(f"Release config default does not exist: {inherited}")
++            pieces.append(OmegaConf.load(inherited))
++        else:
++            raise ValueError(f"Unsupported release config default in {config_file}: {entry!r}")
++    if "_self_" not in defaults:
++        pieces.append(raw)
++    cfg = OmegaConf.merge(*pieces)
++    seed_match = re.fullmatch(r"seed(-?\d+)", checkpoint.parent.name)
++    if seed_match is not None:
++        cfg.seed = int(seed_match.group(1))
++    return cfg
+ 
+ 
+ # ---------------------------------------------------------------------------

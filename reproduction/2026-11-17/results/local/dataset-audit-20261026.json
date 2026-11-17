@@ -1,0 +1,1123 @@
+[
+  {
+    "env": "pusht",
+    "file": "pusht_expert_train.h5",
+    "exists": true,
+    "bytes": 46326087680,
+    "columns": {
+      "action": [
+        2336736,
+        2
+      ],
+      "block_ori": [
+        2336736,
+        2
+      ],
+      "ep_len": [
+        18685
+      ],
+      "ep_offset": [
+        18685
+      ],
+      "episode_idx": [
+        2336736
+      ],
+      "pixels": [
+        2336736,
+        224,
+        224,
+        3
+      ],
+      "proprio": [
+        2336736,
+        4
+      ],
+      "state": [
+        2336736,
+        7
+      ],
+      "step_idx": [
+        2336736
+      ]
+    },
+    "episodes": 18685,
+    "steps": 2336736,
+    "structural_check": "passed"
+  },
+  {
+    "env": "pusht",
+    "file": "pusht_expert_val.h5",
+    "exists": true,
+    "bytes": 16237932,
+    "columns": {
+      "action": [
+        2514,
+        2
+      ],
+      "block_ori": [
+        2514,
+        2
+      ],
+      "ep_len": [
+        21
+      ],
+      "ep_offset": [
+        21
+      ],
+      "episode_idx": [
+        2514
+      ],
+      "pixels": [
+        2514,
+        224,
+        224,
+        3
+      ],
+      "proprio": [
+        2514,
+        4
+      ],
+      "state": [
+        2514,
+        7
+      ],
+      "step_idx": [
+        2514
+      ]
+    },
+    "episodes": 21,
+    "steps": 2514,
+    "structural_check": "passed"
+  },
+  {
+    "env": "cube",
+    "file": "cube_single_expert_train.h5",
+    "exists": true,
+    "bytes": 72435709158,
+    "columns": {
+      "action": [
+        1969800,
+        5
+      ],
+      "control": [
+        1969800,
+        7
+      ],
+      "ep_idx": [
+        1969800
+      ],
+      "ep_len": [
+        9800
+      ],
+      "ep_offset": [
+        9800
+      ],
+      "id": [
+        1969800
+      ],
+      "observation": [
+        1969800,
+        28
+      ],
+      "pixels": [
+        1969800,
+        224,
+        224,
+        3
+      ],
+      "prev_qpos": [
+        1969800,
+        21
+      ],
+      "prev_qvel": [
+        1969800,
+        20
+      ],
+      "privileged_block_0_pos": [
+        1969800,
+        3
+      ],
+      "privileged_block_0_quat": [
+        1969800,
+        4
+      ],
+      "privileged_block_0_yaw": [
+        1969800,
+        1
+      ],
+      "privileged_target_block": [
+        1969800
+      ],
+      "privileged_target_block_pos": [
+        1969800,
+        3
+      ],
+      "privileged_target_block_yaw": [
+        1969800,
+        1
+      ],
+      "privileged_target_task": [
+        1969800
+      ],
+      "proprio_effector_pos": [
+        1969800,
+        3
+      ],
+      "proprio_effector_yaw": [
+        1969800,
+        1
+      ],
+      "proprio_gripper_contact": [
+        1969800,
+        1
+      ],
+      "proprio_gripper_opening": [
+        1969800,
+        1
+      ],
+      "proprio_gripper_vel": [
+        1969800,
+        1
+      ],
+      "proprio_joint_pos": [
+        1969800,
+        6
+      ],
+      "proprio_joint_vel": [
+        1969800,
+        6
+      ],
+      "qpos": [
+        1969800,
+        21
+      ],
+      "qvel": [
+        1969800,
+        20
+      ],
+      "render_time": [
+        1969800
+      ],
+      "reward": [
+        1969800
+      ],
+      "step_idx": [
+        1969800
+      ],
+      "success": [
+        1969800
+      ],
+      "target": [
+        1969800,
+        28
+      ],
+      "terminated": [
+        1969800
+      ],
+      "time": [
+        1969800,
+        1
+      ],
+      "truncated": [
+        1969800
+      ]
+    },
+    "episodes": 9800,
+    "steps": 1969800,
+    "structural_check": "passed"
+  },
+  {
+    "env": "cube",
+    "file": "cube_single_expert_val.h5",
+    "exists": true,
+    "bytes": 1476911399,
+    "columns": {
+      "action": [
+        40200,
+        5
+      ],
+      "control": [
+        40200,
+        7
+      ],
+      "ep_idx": [
+        40200
+      ],
+      "ep_len": [
+        200
+      ],
+      "ep_offset": [
+        200
+      ],
+      "id": [
+        40200
+      ],
+      "observation": [
+        40200,
+        28
+      ],
+      "pixels": [
+        40200,
+        224,
+        224,
+        3
+      ],
+      "prev_qpos": [
+        40200,
+        21
+      ],
+      "prev_qvel": [
+        40200,
+        20
+      ],
+      "privileged_block_0_pos": [
+        40200,
+        3
+      ],
+      "privileged_block_0_quat": [
+        40200,
+        4
+      ],
+      "privileged_block_0_yaw": [
+        40200,
+        1
+      ],
+      "privileged_target_block": [
+        40200
+      ],
+      "privileged_target_block_pos": [
+        40200,
+        3
+      ],
+      "privileged_target_block_yaw": [
+        40200,
+        1
+      ],
+      "privileged_target_task": [
+        40200
+      ],
+      "proprio_effector_pos": [
+        40200,
+        3
+      ],
+      "proprio_effector_yaw": [
+        40200,
+        1
+      ],
+      "proprio_gripper_contact": [
+        40200,
+        1
+      ],
+      "proprio_gripper_opening": [
+        40200,
+        1
+      ],
+      "proprio_gripper_vel": [
+        40200,
+        1
+      ],
+      "proprio_joint_pos": [
+        40200,
+        6
+      ],
+      "proprio_joint_vel": [
+        40200,
+        6
+      ],
+      "qpos": [
+        40200,
+        21
+      ],
+      "qvel": [
+        40200,
+        20
+      ],
+      "render_time": [
+        40200
+      ],
+      "reward": [
+        40200
+      ],
+      "step_idx": [
+        40200
+      ],
+      "success": [
+        40200
+      ],
+      "target": [
+        40200,
+        28
+      ],
+      "terminated": [
+        40200
+      ],
+      "time": [
+        40200,
+        1
+      ],
+      "truncated": [
+        40200
+      ]
+    },
+    "episodes": 200,
+    "steps": 40200,
+    "structural_check": "passed"
+  },
+  {
+    "env": "ant",
+    "file": "visual_antmaze_medium_explore_stitch_train.h5",
+    "exists": true,
+    "bytes": 21977637109,
+    "columns": {
+      "action": [
+        10050000,
+        8
+      ],
+      "ep_idx": [
+        10050000
+      ],
+      "ep_len": [
+        25000
+      ],
+      "ep_offset": [
+        25000
+      ],
+      "pixels": [
+        10050000,
+        64,
+        64,
+        3
+      ],
+      "proprio": [
+        10050000,
+        29
+      ],
+      "qpos": [
+        10050000,
+        15
+      ],
+      "qvel": [
+        10050000,
+        14
+      ],
+      "step_idx": [
+        10050000
+      ],
+      "xy": [
+        10050000,
+        2
+      ]
+    },
+    "episodes": 25000,
+    "steps": 10050000,
+    "structural_check": "passed"
+  },
+  {
+    "env": "ant",
+    "file": "visual_antmaze_medium_stitch_val.h5",
+    "exists": true,
+    "bytes": 1385783183,
+    "columns": {
+      "action": [
+        502500,
+        8
+      ],
+      "direction": [
+        502500,
+        2
+      ],
+      "env_name": [
+        502500
+      ],
+      "ep_idx": [
+        502500
+      ],
+      "ep_len": [
+        1250
+      ],
+      "ep_offset": [
+        1250
+      ],
+      "goal": [
+        502500,
+        64,
+        64,
+        3
+      ],
+      "goal_ij": [
+        502500,
+        2
+      ],
+      "goal_xy": [
+        502500,
+        2
+      ],
+      "id": [
+        502500
+      ],
+      "init_ij": [
+        502500,
+        2
+      ],
+      "init_xy": [
+        502500,
+        2
+      ],
+      "pixels": [
+        502500,
+        64,
+        64,
+        3
+      ],
+      "prev_qpos": [
+        502500,
+        15
+      ],
+      "prev_qvel": [
+        502500,
+        14
+      ],
+      "proprio": [
+        502500,
+        29
+      ],
+      "qpos": [
+        502500,
+        15
+      ],
+      "qvel": [
+        502500,
+        14
+      ],
+      "render_time": [
+        502500
+      ],
+      "reward": [
+        502500
+      ],
+      "step_idx": [
+        502500
+      ],
+      "success": [
+        502500
+      ],
+      "terminated": [
+        502500
+      ],
+      "truncated": [
+        502500
+      ],
+      "xy": [
+        502500,
+        2
+      ]
+    },
+    "episodes": 1250,
+    "steps": 502500,
+    "structural_check": "passed"
+  },
+  {
+    "env": "ant",
+    "file": "visual_antmaze_medium_probing_train.h5",
+    "exists": true,
+    "bytes": 3373634511,
+    "columns": {
+      "action": [
+        1248612,
+        8
+      ],
+      "direction": [
+        1248612,
+        2
+      ],
+      "env_name": [
+        1248612
+      ],
+      "ep_idx": [
+        1248612
+      ],
+      "ep_len": [
+        3106
+      ],
+      "ep_offset": [
+        3106
+      ],
+      "goal": [
+        1248612,
+        64,
+        64,
+        3
+      ],
+      "goal_ij": [
+        1248612,
+        2
+      ],
+      "goal_xy": [
+        1248612,
+        2
+      ],
+      "id": [
+        1248612
+      ],
+      "init_ij": [
+        1248612,
+        2
+      ],
+      "init_xy": [
+        1248612,
+        2
+      ],
+      "pixels": [
+        1248612,
+        64,
+        64,
+        3
+      ],
+      "prev_qpos": [
+        1248612,
+        15
+      ],
+      "prev_qvel": [
+        1248612,
+        14
+      ],
+      "proprio": [
+        1248612,
+        29
+      ],
+      "qpos": [
+        1248612,
+        15
+      ],
+      "qvel": [
+        1248612,
+        14
+      ],
+      "render_time": [
+        1248612
+      ],
+      "reward": [
+        1248612
+      ],
+      "step_idx": [
+        1248612
+      ],
+      "success": [
+        1248612
+      ],
+      "terminated": [
+        1248612
+      ],
+      "truncated": [
+        1248612
+      ],
+      "xy": [
+        1248612,
+        2
+      ]
+    },
+    "episodes": 3106,
+    "steps": 1248612,
+    "structural_check": "passed"
+  },
+  {
+    "env": "ant",
+    "file": "visual_antmaze_medium_probing_eval.h5",
+    "exists": true,
+    "bytes": 336701660,
+    "columns": {
+      "action": [
+        124620,
+        8
+      ],
+      "direction": [
+        124620,
+        2
+      ],
+      "env_name": [
+        124620
+      ],
+      "ep_idx": [
+        124620
+      ],
+      "ep_len": [
+        310
+      ],
+      "ep_offset": [
+        310
+      ],
+      "goal": [
+        124620,
+        64,
+        64,
+        3
+      ],
+      "goal_ij": [
+        124620,
+        2
+      ],
+      "goal_xy": [
+        124620,
+        2
+      ],
+      "id": [
+        124620
+      ],
+      "init_ij": [
+        124620,
+        2
+      ],
+      "init_xy": [
+        124620,
+        2
+      ],
+      "pixels": [
+        124620,
+        64,
+        64,
+        3
+      ],
+      "prev_qpos": [
+        124620,
+        15
+      ],
+      "prev_qvel": [
+        124620,
+        14
+      ],
+      "proprio": [
+        124620,
+        29
+      ],
+      "qpos": [
+        124620,
+        15
+      ],
+      "qvel": [
+        124620,
+        14
+      ],
+      "render_time": [
+        124620
+      ],
+      "reward": [
+        124620
+      ],
+      "step_idx": [
+        124620
+      ],
+      "success": [
+        124620
+      ],
+      "terminated": [
+        124620
+      ],
+      "truncated": [
+        124620
+      ],
+      "xy": [
+        124620,
+        2
+      ]
+    },
+    "episodes": 310,
+    "steps": 124620,
+    "structural_check": "passed"
+  },
+  {
+    "env": "fourroom",
+    "file": "fourroom_tp35_d1.h5",
+    "exists": true,
+    "bytes": 4060791442,
+    "columns": {
+      "action": [
+        1503750,
+        2
+      ],
+      "all_agent_xy": [
+        1503750,
+        2,
+        2
+      ],
+      "closed_door_idx": [
+        1503750
+      ],
+      "distance_to_target": [
+        1503750
+      ],
+      "distractor0_xy": [
+        1503750,
+        2
+      ],
+      "distractor_xy": [
+        1503750,
+        1,
+        2
+      ],
+      "env_name": [
+        1503750
+      ],
+      "ep_idx": [
+        1503750
+      ],
+      "ep_len": [
+        3750
+      ],
+      "ep_offset": [
+        3750
+      ],
+      "full_state": [
+        1503750,
+        4
+      ],
+      "goal_state": [
+        1503750,
+        2
+      ],
+      "id": [
+        1503750
+      ],
+      "min_distractor_dist": [
+        1503750,
+        1
+      ],
+      "observation": [
+        1503750,
+        14
+      ],
+      "pixels": [
+        1503750,
+        224,
+        224,
+        3
+      ],
+      "proprio": [
+        1503750,
+        2
+      ],
+      "render_time": [
+        1503750
+      ],
+      "reward": [
+        1503750
+      ],
+      "state": [
+        1503750,
+        2
+      ],
+      "step_idx": [
+        1503750
+      ],
+      "terminated": [
+        1503750
+      ],
+      "truncated": [
+        1503750
+      ],
+      "xy": [
+        1503750,
+        2
+      ]
+    },
+    "episodes": 3750,
+    "steps": 1503750,
+    "structural_check": "passed"
+  },
+  {
+    "env": "fourroom",
+    "file": "fourroom_tp35_d1_val.h5",
+    "exists": true,
+    "bytes": 162604262,
+    "columns": {
+      "action": [
+        60150,
+        2
+      ],
+      "all_agent_xy": [
+        60150,
+        2,
+        2
+      ],
+      "closed_door_idx": [
+        60150
+      ],
+      "distance_to_target": [
+        60150
+      ],
+      "distractor0_xy": [
+        60150,
+        2
+      ],
+      "distractor_xy": [
+        60150,
+        1,
+        2
+      ],
+      "env_name": [
+        60150
+      ],
+      "ep_idx": [
+        60150
+      ],
+      "ep_len": [
+        150
+      ],
+      "ep_offset": [
+        150
+      ],
+      "full_state": [
+        60150,
+        4
+      ],
+      "goal_state": [
+        60150,
+        2
+      ],
+      "id": [
+        60150
+      ],
+      "min_distractor_dist": [
+        60150,
+        1
+      ],
+      "observation": [
+        60150,
+        14
+      ],
+      "pixels": [
+        60150,
+        224,
+        224,
+        3
+      ],
+      "proprio": [
+        60150,
+        2
+      ],
+      "render_time": [
+        60150
+      ],
+      "reward": [
+        60150
+      ],
+      "state": [
+        60150,
+        2
+      ],
+      "step_idx": [
+        60150
+      ],
+      "terminated": [
+        60150
+      ],
+      "truncated": [
+        60150
+      ],
+      "xy": [
+        60150,
+        2
+      ]
+    },
+    "episodes": 150,
+    "steps": 60150,
+    "structural_check": "passed"
+  },
+  {
+    "env": "fourroom",
+    "file": "fourroom_tp35_d1_probing.h5",
+    "exists": true,
+    "bytes": 648794116,
+    "columns": {
+      "action": [
+        240600,
+        2
+      ],
+      "all_agent_xy": [
+        240600,
+        2,
+        2
+      ],
+      "closed_door_idx": [
+        240600
+      ],
+      "distance_to_target": [
+        240600
+      ],
+      "distractor0_xy": [
+        240600,
+        2
+      ],
+      "distractor_xy": [
+        240600,
+        1,
+        2
+      ],
+      "env_name": [
+        240600
+      ],
+      "ep_idx": [
+        240600
+      ],
+      "ep_len": [
+        600
+      ],
+      "ep_offset": [
+        600
+      ],
+      "full_state": [
+        240600,
+        4
+      ],
+      "goal_state": [
+        240600,
+        2
+      ],
+      "id": [
+        240600
+      ],
+      "min_distractor_dist": [
+        240600,
+        1
+      ],
+      "observation": [
+        240600,
+        14
+      ],
+      "pixels": [
+        240600,
+        224,
+        224,
+        3
+      ],
+      "proprio": [
+        240600,
+        2
+      ],
+      "render_time": [
+        240600
+      ],
+      "reward": [
+        240600
+      ],
+      "state": [
+        240600,
+        2
+      ],
+      "step_idx": [
+        240600
+      ],
+      "terminated": [
+        240600
+      ],
+      "truncated": [
+        240600
+      ],
+      "xy": [
+        240600,
+        2
+      ]
+    },
+    "episodes": 600,
+    "steps": 240600,
+    "structural_check": "passed"
+  },
+  {
+    "env": "fourroom",
+    "file": "fourroom_tp35_d1_probing_val.h5",
+    "exists": true,
+    "bytes": 162604262,
+    "columns": {
+      "action": [
+        60150,
+        2
+      ],
+      "all_agent_xy": [
+        60150,
+        2,
+        2
+      ],
+      "closed_door_idx": [
+        60150
+      ],
+      "distance_to_target": [
+        60150
+      ],
+      "distractor0_xy": [
+        60150,
+        2
+      ],
+      "distractor_xy": [
+        60150,
+        1,
+        2
+      ],
+      "env_name": [
+        60150
+      ],
+      "ep_idx": [
+        60150
+      ],
+      "ep_len": [
+        150
+      ],
+      "ep_offset": [
+        150
+      ],
+      "full_state": [
+        60150,
+        4
+      ],
+      "goal_state": [
+        60150,
+        2
+      ],
+      "id": [
+        60150
+      ],
+      "min_distractor_dist": [
+        60150,
+        1
+      ],
+      "observation": [
+        60150,
+        14
+      ],
+      "pixels": [
+        60150,
+        224,
+        224,
+        3
+      ],
+      "proprio": [
+        60150,
+        2
+      ],
+      "render_time": [
+        60150
+      ],
+      "reward": [
+        60150
+      ],
+      "state": [
+        60150,
+        2
+      ],
+      "step_idx": [
+        60150
+      ],
+      "terminated": [
+        60150
+      ],
+      "truncated": [
+        60150
+      ],
+      "xy": [
+        60150,
+        2
+      ]
+    },
+    "episodes": 150,
+    "steps": 60150,
+    "structural_check": "passed"
+  }
+]

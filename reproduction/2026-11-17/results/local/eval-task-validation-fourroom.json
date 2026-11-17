@@ -1,0 +1,36 @@
+[
+  {
+    "env": "fourroom",
+    "path": "/home/songxw/H-JEPA/h_jepa/assets/eval_trajs/fourroom/fourroom_tp35_cross2_goal75_n50_d1.pt",
+    "bytes": 573644209,
+    "tasks": 50,
+    "columns": [
+      "xy",
+      "proprio",
+      "state",
+      "goal_state",
+      "closed_door_idx",
+      "distractor_xy",
+      "all_agent_xy",
+      "full_state",
+      "distractor0_xy",
+      "distractor1_xy",
+      "distractor2_xy",
+      "distractor3_xy",
+      "distractor4_xy",
+      "distance_to_target",
+      "pixels",
+      "observation",
+      "reward",
+      "terminated",
+      "truncated",
+      "action",
+      "step_idx",
+      "ep_idx"
+    ],
+    "sha256": "c2942918f7f6484de3b58f26023a8a49349da8d4bc82bb293e7347699c5f52ba",
+    "revision": "cc05cb8d2aaf9aec0d5364d073c6369ff760b60b",
+    "hash_check": "passed",
+    "payload_load": "passed"
+  }
+]

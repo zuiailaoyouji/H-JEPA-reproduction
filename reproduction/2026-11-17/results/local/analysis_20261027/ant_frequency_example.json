@@ -1,0 +1,14 @@
+{
+  "episode_index": 17,
+  "slow_centroid": 0.042176978117029695,
+  "body13_centroid": 0.24797605086188387,
+  "body27_centroid": 0.2647438821448972,
+  "body13_gap": 5.879417206557982,
+  "body27_gap": 6.276976065243569,
+  "selection_rule": "Among first 64 training episodes, closest 27-dim power-centroid gap to the locally computed dataset gap",
+  "dataset_gap": 6.266125692352932,
+  "frames": 81,
+  "omitted_qvel_dimensions": 14,
+  "paper_episode_gap": 8.3,
+  "paper_episode_identity_unknown": true
+}

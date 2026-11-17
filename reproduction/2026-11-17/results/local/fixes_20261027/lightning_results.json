@@ -1,0 +1,20 @@
+[
+  {
+    "accumulation": 1,
+    "optimizer_updates": 64,
+    "scheduler_steps": 64,
+    "scheduler_budget": 64,
+    "last_lr": [
+      0.0
+    ]
+  },
+  {
+    "accumulation": 4,
+    "optimizer_updates": 16,
+    "scheduler_steps": 16,
+    "scheduler_budget": 16,
+    "last_lr": [
+      0.0
+    ]
+  }
+]

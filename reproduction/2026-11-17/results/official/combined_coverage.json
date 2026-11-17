@@ -1,0 +1,26 @@
+{
+  "release_revision": "08fc8a21208671a87741f2960aeba9b5db4420e0",
+  "complete": true,
+  "experiments": {
+    "droid": {
+      "found": 27,
+      "expected": 27,
+      "source": "local completed evaluation"
+    },
+    "probe": {
+      "found": 18,
+      "expected": 18,
+      "source": "local completed evaluation"
+    },
+    "depth": {
+      "found": 84,
+      "expected": 84,
+      "source": "H-JEPA_results_only_20261029.zip"
+    },
+    "cost_ladder": {
+      "found": 108,
+      "expected": 108,
+      "source": "H-JEPA_results_only_20261029.zip"
+    }
+  }
+}

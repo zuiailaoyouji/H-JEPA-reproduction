@@ -1,0 +1,51 @@
+[
+  {
+    "model": "ant_hjepa_l2",
+    "run_dir": "/home/songxw/hjepa-data/ckpts/ant/ant_hjepa_l2/seed42",
+    "pid": 590971,
+    "pgid": 590969,
+    "command": "python main_hjepa.py --config-name ant_hjepa_l2 seed=42 ",
+    "checkpoint": "/home/songxw/hjepa-data/ckpts/ant/ant_hjepa_l2/seed42/lightning_resume/last.ckpt",
+    "checkpoint_bytes": 283278110,
+    "checkpoint_mtime": "2026-10-27T09:25:26.457887",
+    "action": "SIGTERM to the model-specific process group; all files retained",
+    "stopped_at": "2026-10-27T09:28:11+08:00"
+  },
+  {
+    "model": "pusht_hjepa_l3",
+    "run_dir": "/home/songxw/hjepa-data/ckpts/pusht/pusht_hjepa_l3/seed42",
+    "pid": 4025065,
+    "pgid": 4025063,
+    "command": "python main_hjepa.py --config-name pusht_hjepa_l3 seed=42 ",
+    "checkpoint": "/home/songxw/hjepa-data/ckpts/pusht/pusht_hjepa_l3/seed42/lightning_resume/last.ckpt",
+    "checkpoint_bytes": 422752387,
+    "checkpoint_mtime": "2026-10-27T09:23:08.762337",
+    "action": "SIGTERM to the model-specific process group; all files retained",
+    "forced_stop": true,
+    "stopped_at": "2026-10-27T09:28:11+08:00"
+  },
+  {
+    "model": "cube_hjepa_l3",
+    "run_dir": "/home/songxw/hjepa-data/ckpts/cube/cube_hjepa_l3/seed42",
+    "pid": 180048,
+    "pgid": 180043,
+    "command": "python main_hjepa.py --config-name cube_hjepa_l3 seed=42 ",
+    "checkpoint": "/home/songxw/hjepa-data/ckpts/cube/cube_hjepa_l3/seed42/lightning_resume/last.ckpt",
+    "checkpoint_bytes": 422754115,
+    "checkpoint_mtime": "2026-10-27T09:27:07.325558",
+    "action": "SIGTERM to the model-specific process group; all files retained",
+    "stopped_at": "2026-10-27T09:28:11+08:00"
+  },
+  {
+    "model": "fourroom_hjepa_l3",
+    "run_dir": "/home/songxw/hjepa-data/ckpts/fourroom/fourroom_hjepa_l3/seed42",
+    "pid": 3115597,
+    "pgid": 3115595,
+    "command": "python main_hjepa.py --config-name fourroom_hjepa_l3 seed=42 ",
+    "checkpoint": "/home/songxw/hjepa-data/ckpts/fourroom/fourroom_hjepa_l3/seed42/lightning_resume/last.ckpt",
+    "final_world_model": "/home/songxw/hjepa-data/ckpts/fourroom/fourroom_hjepa_l3/seed42/fourroom_hjepa_l3_object.ckpt",
+    "action": "Stop posthoc job; preserve completed world model and planning results; user requested all four environments restart from L2.",
+    "forced_stop": true,
+    "stopped_at": "2026-10-27T09:30:42+08:00"
+  }
+]

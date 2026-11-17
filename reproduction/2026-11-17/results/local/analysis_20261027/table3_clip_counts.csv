@@ -1,0 +1,17 @@
+environment,depth,dataset,level1_frames_per_clip,minimum_env_step_span_inclusive,loader_half_open_span_transitions,episodes_in_file,eligible_episodes,selected_episodes,selected_transitions,valid_clips_per_epoch,fraction_of_local_lewm_clips,paper_table3_clips,matches_paper_table3,selection_seed
+fourroom,1,fourroom_tp35_d1,4,16,20,3750,3750,2494,1000094,952708,1.0,952708,True,0
+fourroom,2,fourroom_tp35_d1,7,31,35,3750,3750,2494,1000094,915298,0.9607329842931938,915298,True,0
+fourroom,3,fourroom_tp35_d1,13,61,65,3750,3750,2494,1000094,840478,0.8821989528795812,840478,True,0
+fourroom,4,fourroom_tp35_d1,25,121,125,3750,3750,2494,1000094,690838,0.725130890052356,690838,True,0
+ant,1,visual_antmaze_medium_explore_stitch_train,4,16,20,25000,25000,25000,10050000,9575000,1.0,9575000,True,0
+ant,2,visual_antmaze_medium_explore_stitch_train,7,31,35,25000,25000,25000,10050000,9200000,0.9608355091383812,9200000,True,0
+ant,3,visual_antmaze_medium_explore_stitch_train,13,61,65,25000,25000,25000,10050000,8450000,0.8825065274151436,8450000,True,0
+ant,4,visual_antmaze_medium_explore_stitch_train,25,121,125,25000,25000,25000,10050000,6950000,0.7258485639686684,6950000,True,0
+pusht,1,pusht_expert_train,4,16,20,18685,18685,18685,2336736,1981721,1.0,1981721,True,
+pusht,2,pusht_expert_train,7,31,35,18685,18685,18685,2336736,1701446,0.8585698995973702,1701446,True,
+pusht,3,pusht_expert_train,13,61,65,18685,18180,18180,2307143,1143623,0.5770857754446767,1143623,True,
+pusht,4,pusht_expert_train,25,121,125,18685,9292,9292,1438139,285931,0.14428418531165588,285931,True,
+cube,1,cube_single_expert_train,4,16,20,9800,9800,9800,1969800,1783600,1.0,1783600,True,
+cube,2,cube_single_expert_train,7,31,35,9800,9800,9800,1969800,1636600,0.9175824175824175,1636600,True,
+cube,3,cube_single_expert_train,13,61,65,9800,9800,9800,1969800,1342600,0.7527472527472527,1342600,True,
+cube,4,cube_single_expert_train,25,121,125,9800,9800,9800,1969800,754600,0.4230769230769231,754600,True,

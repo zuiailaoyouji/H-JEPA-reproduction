@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "path": "assets/eval_trajs/SHA256SUMS",
+      "bytes": 402,
+      "sha256": "245f9c726353cc68dc046f88443d837282b334d14dcd7399eb7c3b17fc27230d"
+    },
+    {
+      "path": "assets/eval_trajs/ant/expert_grid_d3_n50.pt",
+      "bytes": 155119789,
+      "sha256": "72325de082844e0fb85459ae970c2197dd9030edb1bab3891be9a18d465f4362"
+    },
+    {
+      "path": "assets/eval_trajs/fourroom/fourroom_tp35_cross2_goal75_n50_d1.pt",
+      "bytes": 573644209,
+      "sha256": "c2942918f7f6484de3b58f26023a8a49349da8d4bc82bb293e7347699c5f52ba"
+    },
+    {
+      "path": "assets/eval_trajs/ogbench/goal_offset_20_pickup_val.pt",
+      "bytes": 152425457,
+      "sha256": "8880d7d72f0d044dcc3df0deab162f2488ff603a4cb01d472c5272d80a01a5e7"
+    },
+    {
+      "path": "assets/eval_trajs/pusht/goal_offset_75_val.pt",
+      "bytes": 564814221,
+      "sha256": "588e8db4a6be13e41f00b83332906ac91bc6fda8e3e211a06c8a31431b0d0742"
+    }
+  ],
+  "file_count": 5
+}

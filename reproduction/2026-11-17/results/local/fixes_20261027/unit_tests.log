@@ -1,0 +1,9 @@
+........                                                                 [100%]
+=============================== warnings summary ===============================
+h_jepa/tests/test_training_repairs.py::test_schedule_uses_updates_and_reaches_zero[1-400]
+h_jepa/tests/test_training_repairs.py::test_schedule_uses_updates_and_reaches_zero[1-400]
+  /home/songxw/miniconda3/envs/hjepa/lib/python3.11/site-packages/torchmetrics/utilities/imports.py:24: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _PYTHON_LOWER_3_8 = LooseVersion(_PYTHON_VERSION) < LooseVersion("3.8")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+8 passed, 2 warnings in 10.22s

@@ -1,0 +1,418 @@
+{
+  "updated_at": "2026-10-28 23:38:27 CST",
+  "pid": 4019903,
+  "scope": "planning_and_analysis_only",
+  "release_revision": "08fc8a21208671a87741f2960aeba9b5db4420e0",
+  "total": 219,
+  "complete": 219,
+  "pending": 0,
+  "active": [],
+  "active_details": [],
+  "assigned": 0,
+  "nodes_ready": [
+    "28.58.224.19",
+    "28.58.227.124",
+    "28.59.4.174",
+    "28.83.1.126",
+    "28.85.35.155",
+    "28.85.50.105",
+    "28.85.55.247",
+    "29.162.234.162"
+  ],
+  "target_gpus": 64,
+  "active_gpu_count": 0,
+  "planning_performance": {
+    "version": "20261028-frozen-dual",
+    "workers_per_gpu": 2,
+    "cpu_threads": 4,
+    "freeze_model_gradients": true,
+    "solver_steps_and_samples": "unchanged",
+    "tasks_and_seeds": "unchanged",
+    "precision": "original_float32_math_sdpa",
+    "numerical_note": "Frozen-parameter benchmark max action difference 0.00017464160919189453; not bitwise identical."
+  },
+  "failures": [],
+  "excluded_probe_decoder_jobs": 18,
+  "retry_history": [
+    {
+      "job": "cost.ant.hjepa_l4.seed42.l3_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "4",
+      "host": "28.58.224.19",
+      "seconds": 349.5,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.58.224.19/cost.ant.hjepa_l4.seed42.l3_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l4.seed44.flat",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "0",
+      "host": "28.58.224.19",
+      "seconds": 376.7,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.58.224.19/cost.ant.hjepa_l4.seed44.flat.log"
+    },
+    {
+      "job": "depth.ant.hwm_l3.seed42.l3",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "5",
+      "host": "28.59.4.174",
+      "seconds": 422.8,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.59.4.174/depth.ant.hwm_l3.seed42.l3.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed43.l2_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "4",
+      "host": "29.162.234.162",
+      "seconds": 338.1,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed43.l2_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed42.flat",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "0",
+      "host": "29.162.234.162",
+      "seconds": 353.3,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed42.flat.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed44.l3_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "0",
+      "host": "28.83.1.126",
+      "seconds": 244.0,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.83.1.126/cost.ant.hjepa_l3.seed44.l3_project.log"
+    },
+    {
+      "job": "depth.ant.hjepa_l2.seed43.l2",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "2",
+      "host": "28.83.1.126",
+      "seconds": 253.0,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.83.1.126/depth.ant.hjepa_l2.seed43.l2.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l2.seed42.flat",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "7",
+      "host": "28.83.1.126",
+      "seconds": 277.2,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.83.1.126/cost.ant.hjepa_l2.seed42.flat.log"
+    },
+    {
+      "job": "depth.ant.hjepa_l3.seed42.l3",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "2",
+      "host": "28.59.4.174",
+      "seconds": 844.1,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.59.4.174/depth.ant.hjepa_l3.seed42.l3.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l4.seed43.l2_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "2",
+      "host": "28.58.224.19",
+      "seconds": 846.4,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.58.224.19/cost.ant.hjepa_l4.seed43.l2_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l4.seed43.l3_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "5",
+      "host": "28.58.224.19",
+      "seconds": 1060.5,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.58.224.19/cost.ant.hjepa_l4.seed43.l3_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l4.seed42.l2_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "1",
+      "host": "28.58.224.19",
+      "seconds": 1075.6,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.58.224.19/cost.ant.hjepa_l4.seed42.l2_project.log"
+    },
+    {
+      "job": "depth.ant.hwm_l3.seed44.l3",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "7",
+      "host": "28.59.4.174",
+      "seconds": 1209.2,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.59.4.174/depth.ant.hwm_l3.seed44.l3.log"
+    },
+    {
+      "job": "depth.ant.hjepa_l3.seed43.l3",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "3",
+      "host": "28.59.4.174",
+      "seconds": 1212.2,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.59.4.174/depth.ant.hjepa_l3.seed43.l3.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed42.l3_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "6",
+      "host": "29.162.234.162",
+      "seconds": 1790.5,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed42.l3_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed44.l2_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "5",
+      "host": "29.162.234.162",
+      "seconds": 2052.7,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed44.l2_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed43.l3_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "7",
+      "host": "29.162.234.162",
+      "seconds": 2312.2,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed43.l3_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed44.flat",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "2",
+      "host": "29.162.234.162",
+      "seconds": 66.5,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed44.flat.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l4.seed44.l3_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "6",
+      "host": "28.58.224.19",
+      "seconds": 69.4,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.58.224.19/cost.ant.hjepa_l4.seed44.l3_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l4.seed42.l4_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "7",
+      "host": "28.58.224.19",
+      "seconds": 69.5,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/28.58.224.19/cost.ant.hjepa_l4.seed42.l4_project.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed43.flat",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "1",
+      "host": "29.162.234.162",
+      "seconds": 69.7,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed43.flat.log"
+    },
+    {
+      "job": "cost.ant.hjepa_l3.seed42.l2_project",
+      "state": "failed",
+      "returncode": -6,
+      "gpu": "3",
+      "host": "29.162.234.162",
+      "seconds": 75.7,
+      "log": "/jizhicfs/pkuhetu/xby/ft_local/hjepa-task-20261028/cluster/nodes/29.162.234.162/cost.ant.hjepa_l3.seed42.l2_project.log"
+    }
+  ],
+  "quarantined_gpus": [
+    [
+      "28.58.224.19",
+      "0"
+    ],
+    [
+      "28.58.224.19",
+      "1"
+    ],
+    [
+      "28.58.224.19",
+      "2"
+    ],
+    [
+      "28.58.224.19",
+      "4"
+    ],
+    [
+      "28.58.224.19",
+      "5"
+    ],
+    [
+      "28.58.224.19",
+      "6"
+    ],
+    [
+      "28.58.224.19",
+      "7"
+    ],
+    [
+      "28.59.4.174",
+      "2"
+    ],
+    [
+      "28.59.4.174",
+      "3"
+    ],
+    [
+      "28.59.4.174",
+      "5"
+    ],
+    [
+      "28.59.4.174",
+      "7"
+    ],
+    [
+      "28.83.1.126",
+      "0"
+    ],
+    [
+      "28.83.1.126",
+      "2"
+    ],
+    [
+      "28.83.1.126",
+      "7"
+    ],
+    [
+      "29.162.234.162",
+      "0"
+    ],
+    [
+      "29.162.234.162",
+      "1"
+    ],
+    [
+      "29.162.234.162",
+      "2"
+    ],
+    [
+      "29.162.234.162",
+      "3"
+    ],
+    [
+      "29.162.234.162",
+      "4"
+    ],
+    [
+      "29.162.234.162",
+      "5"
+    ],
+    [
+      "29.162.234.162",
+      "6"
+    ],
+    [
+      "29.162.234.162",
+      "7"
+    ]
+  ],
+  "compute_only_gpus": [
+    [
+      "28.58.224.19",
+      "0"
+    ],
+    [
+      "28.58.224.19",
+      "1"
+    ],
+    [
+      "28.58.224.19",
+      "2"
+    ],
+    [
+      "28.58.224.19",
+      "4"
+    ],
+    [
+      "28.58.224.19",
+      "5"
+    ],
+    [
+      "28.58.224.19",
+      "6"
+    ],
+    [
+      "28.58.224.19",
+      "7"
+    ],
+    [
+      "28.59.4.174",
+      "2"
+    ],
+    [
+      "28.59.4.174",
+      "3"
+    ],
+    [
+      "28.59.4.174",
+      "5"
+    ],
+    [
+      "28.59.4.174",
+      "7"
+    ],
+    [
+      "28.83.1.126",
+      "0"
+    ],
+    [
+      "28.83.1.126",
+      "2"
+    ],
+    [
+      "28.83.1.126",
+      "7"
+    ],
+    [
+      "29.162.234.162",
+      "0"
+    ],
+    [
+      "29.162.234.162",
+      "1"
+    ],
+    [
+      "29.162.234.162",
+      "2"
+    ],
+    [
+      "29.162.234.162",
+      "3"
+    ],
+    [
+      "29.162.234.162",
+      "4"
+    ],
+    [
+      "29.162.234.162",
+      "5"
+    ],
+    [
+      "29.162.234.162",
+      "6"
+    ],
+    [
+      "29.162.234.162",
+      "7"
+    ]
+  ],
+  "main_world_model_training": "forbidden_by_user",
+  "data_download_phase": "complete"
+}

@@ -1,0 +1,8 @@
+{
+  "package": "decord==0.6.0",
+  "source": "https://files.pythonhosted.org/packages/11/79/936af42edf90a7bd4e41a6cac89c913d4b47fa48a26b042d5129a9242ee3/decord-0.6.0-py3-none-manylinux2010_x86_64.whl",
+  "source_sha256": "51997f20be8958e23b7c4061ba45d0efcd86bffd5fe81c695d0befee0d442976",
+  "local_wheel": "local_env/wheels/decord-0.6.0-py3-none-manylinux2010_x86_64.whl",
+  "local_sha256": "186c84aa3b8e62ffee29b716193ea55002c37fe0283fc4913356aee5e171a319",
+  "change": "WHEEL Tag corrected from cp36-cp36m to py3-none, matching official filename; RECORD hashes regenerated. Runtime code and shared libraries unchanged."
+}

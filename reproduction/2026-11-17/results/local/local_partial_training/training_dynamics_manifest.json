@@ -1,0 +1,55 @@
+{
+  "paper_reference": "Figure 10",
+  "status": "local_partial_trend_only",
+  "qualification": "The simulation panels in the paper use four-level models for the Table 4 schedules (FourRoom 7, Ant 5, Push-T 9, Cube 8 epochs) and report the mean/min-max band over three seeds. DROID alone uses 100 epochs. These local runs are two-level seed-42 runs, several with incomplete schedules, so they show only analogous training trends.",
+  "cells": [
+    {
+      "env": "ant",
+      "model": "hjepa_l2",
+      "levels": [
+        1,
+        2
+      ],
+      "epochs": 1,
+      "paper_simulation_epochs": 5,
+      "schedule_complete": false,
+      "seeds": 1
+    },
+    {
+      "env": "cube",
+      "model": "hjepa_l2",
+      "levels": [
+        1,
+        2
+      ],
+      "epochs": 5,
+      "paper_simulation_epochs": 8,
+      "schedule_complete": false,
+      "seeds": 1
+    },
+    {
+      "env": "fourroom",
+      "model": "hjepa_l2",
+      "levels": [
+        1,
+        2
+      ],
+      "epochs": 7,
+      "paper_simulation_epochs": 7,
+      "schedule_complete": true,
+      "seeds": 1
+    },
+    {
+      "env": "pusht",
+      "model": "hjepa_l2",
+      "levels": [
+        1,
+        2
+      ],
+      "epochs": 5,
+      "paper_simulation_epochs": 9,
+      "schedule_complete": false,
+      "seeds": 1
+    }
+  ]
+}

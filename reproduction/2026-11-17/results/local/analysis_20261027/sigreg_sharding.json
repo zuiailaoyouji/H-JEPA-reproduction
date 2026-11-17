@@ -1,0 +1,143 @@
+{
+  "created_at_local": "2026-10-29T13:16:37+08:00",
+  "test": "repository SIGReg with fixed projections, float64 data, CPU Gloo ECF synchronization, and gradients with respect to the Gaussian input Z",
+  "shape": {
+    "n": 256,
+    "d": 32,
+    "directions": 64,
+    "time_steps": 1,
+    "quadrature_knots": 17
+  },
+  "random_seeds": {
+    "data": 20261027,
+    "projection": 261027
+  },
+  "torch_version": "2.7.1+cu128",
+  "python_executable": "/home/songxw/miniconda3/envs/hjepa/bin/python",
+  "backend": "Gloo; all W=1,2,4 runs initialize actual process groups",
+  "input_sha256": "7951b605de6b28763f61bd963d254adb358b000dacf2c9518dd1b43fc491a0e0",
+  "script_sha256": "c4cbdd88661f082978d60c68c8e6f7d594d4eb1ec5837a0cf6dbeac542b3f627",
+  "repository_loss_sha256": "648eb2317727321f53e265f867a35ba47293c73aba40d00339d08f0fea595faf",
+  "gradient_protocol": "Table 11 is matched with the gradient with respect to input Z. Because the repository all_reduce is not tracked by autograd, local input gradients are divided by W before gathering. The identity-encoder parameter gradient is retained only as an auxiliary DDP check.",
+  "quadrature_note": "Production SIGReg creates float32 quadrature buffers; this check casts those same buffers to float64 for all shardings.",
+  "autograd_warning": "PyTorch warns c10d::allreduce_ has no autograd kernel. This checks the repository's current local backward plus explicit DDP gradient averaging; future PyTorch versions must rerun this numerical verification.",
+  "reference": {
+    "tep": 0.9777255791445854,
+    "input_gradient_l2_norm": 0.2807115110564028,
+    "aux_identity_encoder_parameter_gradient_l2_norm": 2.162668056770146,
+    "note": "The paper's Table 11 gradient is compared with the input-Z gradient. Its fixed Gaussian matrix, projection directions, and seeds are unpublished, so matching absolute values is not expected."
+  },
+  "paper_table11_reference_for_context": {
+    "shards": [
+      "1 x 256",
+      "2 x 128",
+      "4 x 64"
+    ],
+    "reported_ours_tep": [
+      1.372619178543,
+      1.372619178543,
+      1.372619178543
+    ],
+    "reported_gradient_norm": [
+      0.349154178012,
+      0.349154178012,
+      0.349154178012
+    ],
+    "reported_single_gpu_tep": [
+      1.372619,
+      1.18077,
+      1.186233
+    ]
+  },
+  "sharding_results": [
+    {
+      "shards": "1 x 256",
+      "world_size": 1,
+      "local_batch": 256,
+      "dtype": "float64",
+      "projection_directions": 64,
+      "quadrature_knots": 17,
+      "data_seed": 20261027,
+      "projection_seed": 261027,
+      "fixed_projection_sha256": "5c77168f942afc5c6fcf9957ae1c8dec0d098a90fea6c137cc9c0bbbf4d9ed1a",
+      "distributed_tep": 0.9777255791445854,
+      "distributed_input_gradient_norm": 0.2807115110564028,
+      "distributed_vs_global_tep_abs_error": 0.0,
+      "distributed_vs_global_input_gradient_max_abs_error": 0.0,
+      "distributed_vs_global_input_gradient_l2_error": 0.0,
+      "aux_identity_encoder_parameter_gradient_norm": 2.162668056770146,
+      "aux_identity_encoder_parameter_gradient_max_abs_error": 0.0,
+      "aux_identity_encoder_parameter_gradient_l2_error": 0.0,
+      "local_reference_mean_tep_without_ecf_collective": 0.9777255791445854,
+      "local_reference_identity_encoder_ddp_gradient_norm_without_ecf_collective": 2.162668056770146,
+      "local_reference_shard_teps": [
+        0.9777255791445854
+      ],
+      "global_reference_tep": 0.9777255791445854,
+      "global_reference_input_gradient_norm": 0.2807115110564028,
+      "global_reference_aux_identity_encoder_parameter_gradient_norm": 2.162668056770146,
+      "invariance_pass": true
+    },
+    {
+      "shards": "2 x 128",
+      "world_size": 2,
+      "local_batch": 128,
+      "dtype": "float64",
+      "projection_directions": 64,
+      "quadrature_knots": 17,
+      "data_seed": 20261027,
+      "projection_seed": 261027,
+      "fixed_projection_sha256": "5c77168f942afc5c6fcf9957ae1c8dec0d098a90fea6c137cc9c0bbbf4d9ed1a",
+      "distributed_tep": 0.9777255791445854,
+      "distributed_input_gradient_norm": 0.2807115110564028,
+      "distributed_vs_global_tep_abs_error": 0.0,
+      "distributed_vs_global_input_gradient_max_abs_error": 6.938893903907228e-18,
+      "distributed_vs_global_input_gradient_l2_error": 1.312917936192843e-16,
+      "aux_identity_encoder_parameter_gradient_norm": 2.1626680567701455,
+      "aux_identity_encoder_parameter_gradient_max_abs_error": 2.498001805406602e-16,
+      "aux_identity_encoder_parameter_gradient_l2_error": 2.121913440960064e-15,
+      "local_reference_mean_tep_without_ecf_collective": 0.9514212464100635,
+      "local_reference_identity_encoder_ddp_gradient_norm_without_ecf_collective": 1.242895408751524,
+      "local_reference_shard_teps": [
+        0.8939580237769232,
+        1.0088844690432037
+      ],
+      "global_reference_tep": 0.9777255791445854,
+      "global_reference_input_gradient_norm": 0.2807115110564028,
+      "global_reference_aux_identity_encoder_parameter_gradient_norm": 2.162668056770146,
+      "invariance_pass": true
+    },
+    {
+      "shards": "4 x 64",
+      "world_size": 4,
+      "local_batch": 64,
+      "dtype": "float64",
+      "projection_directions": 64,
+      "quadrature_knots": 17,
+      "data_seed": 20261027,
+      "projection_seed": 261027,
+      "fixed_projection_sha256": "5c77168f942afc5c6fcf9957ae1c8dec0d098a90fea6c137cc9c0bbbf4d9ed1a",
+      "distributed_tep": 0.9777255791445854,
+      "distributed_input_gradient_norm": 0.2807115110564028,
+      "distributed_vs_global_tep_abs_error": 0.0,
+      "distributed_vs_global_input_gradient_max_abs_error": 7.806255641895632e-18,
+      "distributed_vs_global_input_gradient_l2_error": 1.4164776532616608e-16,
+      "aux_identity_encoder_parameter_gradient_norm": 2.162668056770145,
+      "aux_identity_encoder_parameter_gradient_max_abs_error": 3.885780586188048e-16,
+      "aux_identity_encoder_parameter_gradient_l2_error": 2.2856819536588538e-15,
+      "local_reference_mean_tep_without_ecf_collective": 0.9103885098757183,
+      "local_reference_identity_encoder_ddp_gradient_norm_without_ecf_collective": 0.7617259190860917,
+      "local_reference_shard_teps": [
+        0.83123895478598,
+        0.7691221144862967,
+        1.1333270276112972,
+        0.9078659426192994
+      ],
+      "global_reference_tep": 0.9777255791445854,
+      "global_reference_input_gradient_norm": 0.2807115110564028,
+      "global_reference_aux_identity_encoder_parameter_gradient_norm": 2.162668056770146,
+      "invariance_pass": true
+    }
+  ],
+  "all_distributed_shards_match_single_batch": true
+}

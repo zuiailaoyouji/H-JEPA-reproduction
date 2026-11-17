@@ -1,0 +1,21 @@
+{
+  "release_revision": "08fc8a21208671a87741f2960aeba9b5db4420e0",
+  "experiments": [
+    "depth",
+    "cost",
+    "droid"
+  ],
+  "complete": true,
+  "depth": {
+    "found": 84,
+    "expected": 84
+  },
+  "cost_ladder": {
+    "found": 108,
+    "expected": 108
+  },
+  "droid": {
+    "found": 27,
+    "expected": 27
+  }
+}

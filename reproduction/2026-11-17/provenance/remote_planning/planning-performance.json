@@ -1,0 +1,10 @@
+{
+  "version": "20261028-frozen-dual",
+  "workers_per_gpu": 2,
+  "cpu_threads": 4,
+  "freeze_model_gradients": true,
+  "solver_steps_and_samples": "unchanged",
+  "tasks_and_seeds": "unchanged",
+  "precision": "original_float32_math_sdpa",
+  "numerical_note": "Frozen-parameter benchmark max action difference 0.00017464160919189453; not bitwise identical."
+}

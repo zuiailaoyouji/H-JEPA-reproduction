@@ -1,3 +1,5 @@
+> **本项目复现归档（2026-11-17）：** [脚本、结果、报告及恢复说明](reproduction/2026-11-17/README.md)
+
 <h1 align="center">
     <p><b>H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning</b></p>
 </h1>

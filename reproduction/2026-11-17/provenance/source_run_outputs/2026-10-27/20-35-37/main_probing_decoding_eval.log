@@ -1,0 +1,10 @@
+[2026-10-27 20:35:37,770][root][INFO] - Cached 'action' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_train.h5'
+[2026-10-27 20:35:37,786][root][INFO] - Cached 'xy' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_train.h5'
+[2026-10-27 20:35:37,941][root][INFO] - Cached 'qpos' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_train.h5'
+[2026-10-27 20:35:38,093][root][INFO] - Cached 'qvel' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_train.h5'
+[2026-10-27 20:35:38,273][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it
+[2026-10-27 20:35:38,388][root][INFO] - Cached 'action' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_eval.h5'
+[2026-10-27 20:35:38,391][root][INFO] - Cached 'xy' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_eval.h5'
+[2026-10-27 20:35:38,408][root][INFO] - Cached 'qpos' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_eval.h5'
+[2026-10-27 20:35:38,425][root][INFO] - Cached 'qvel' from '/home/songxw/hjepa-data/visual_antmaze_medium_probing_eval.h5'
+[2026-10-27 20:35:38,439][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it

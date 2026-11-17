@@ -1,0 +1,4 @@
+- policy=/home/songxw/hjepa-data/ckpts/ant/ant_hjepa_l2/seed42/ant_hjepa_l2_object.ckpt
+- seed=42
+- epochs=1
+- +output_dir=/tmp/hjepa-probe-throughput

@@ -1,0 +1,39 @@
+[
+  {
+    "step": 0,
+    "level1_heldout_mse": 5.9054847955703735,
+    "level2_heldout_mse": 5.981403350830078
+  },
+  {
+    "step": 250,
+    "training_batch_loss": 4.521241188049316,
+    "query_grad_l1": 3.956678483518772e-06,
+    "queries_std_l1": 0.02153024449944496,
+    "level1_heldout_mse": 2.2567293643951416,
+    "level2_heldout_mse": 2.25672847032547
+  },
+  {
+    "step": 500,
+    "training_batch_loss": 4.510777473449707,
+    "query_grad_l1": 5.213054919295246e-06,
+    "queries_std_l1": 0.022011181339621544,
+    "level1_heldout_mse": 2.2566860914230347,
+    "level2_heldout_mse": 2.2566858530044556
+  },
+  {
+    "step": 750,
+    "training_batch_loss": 4.519780158996582,
+    "query_grad_l1": 7.675857727207358e-10,
+    "queries_std_l1": 0.03858071193099022,
+    "level1_heldout_mse": 2.261638879776001,
+    "level2_heldout_mse": 2.2566440105438232
+  },
+  {
+    "step": 1000,
+    "training_batch_loss": 4.526254653930664,
+    "query_grad_l1": 1.7239519811695914e-09,
+    "queries_std_l1": 0.03921118378639221,
+    "level1_heldout_mse": 2.2569234371185303,
+    "level2_heldout_mse": 2.256921648979187
+  }
+]

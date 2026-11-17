@@ -1,0 +1,161 @@
+{
+  "files": [
+    {
+      "path": "hjepa-data/ckpts/ant/ant_hjepa_l2/seed42_paper_v2_20261027/lightning_resume/last.ckpt",
+      "bytes": 283279838,
+      "sha256": "e2c7100afb9dd516be09cd5630cc092383469597cb50365fef7108ede7aa43e3"
+    },
+    {
+      "path": "hjepa-data/ckpts/ant/ant_hjepa_l4/seed42/final_probing_decoding_eval_v2/decoder_level1.ckpt",
+      "bytes": 13366769,
+      "sha256": "293afc29aa2a90bb5fa2a3dd97c59970e6d003647c7e9730d4a6950dadb09bb5"
+    },
+    {
+      "path": "hjepa-data/ckpts/ant/ant_hjepa_l4/seed42/final_probing_decoding_eval_v2/decoder_level2.ckpt",
+      "bytes": 13366769,
+      "sha256": "4d66301ab0753b533befbbd53962c9333b5a80d9d751f3e527f43e23a7eb71f6"
+    },
+    {
+      "path": "hjepa-data/ckpts/ant/ant_hjepa_l4/seed42/final_probing_decoding_eval_v2/decoder_level3.ckpt",
+      "bytes": 13366769,
+      "sha256": "68a1b599819afd55b093471022602db9b2851c73e98e8e35c8a09c5fb478046b"
+    },
+    {
+      "path": "hjepa-data/ckpts/cube/cube_hjepa_l2/seed42_paper_v2_20261027/cube_hjepa_l2_epoch_1_object.ckpt",
+      "bytes": 93249235,
+      "sha256": "e33b3319c397de7cdc6a81673dac532acaa0b8363818e92e8076b7f59c4b4e26"
+    },
+    {
+      "path": "hjepa-data/ckpts/cube/cube_hjepa_l2/seed42_paper_v2_20261027/cube_hjepa_l2_epoch_2_object.ckpt",
+      "bytes": 93249235,
+      "sha256": "cb458309ef24aeff82f82a28507e452e0aec36657edbfe6cc10edd1834c7dfdd"
+    },
+    {
+      "path": "hjepa-data/ckpts/cube/cube_hjepa_l2/seed42_paper_v2_20261027/cube_hjepa_l2_epoch_3_object.ckpt",
+      "bytes": 93249235,
+      "sha256": "96a038851fd9d977fc8cd91a243b562e79e67639cafe38666f15a0d27317af36"
+    },
+    {
+      "path": "hjepa-data/ckpts/cube/cube_hjepa_l2/seed42_paper_v2_20261027/cube_hjepa_l2_epoch_4_object.ckpt",
+      "bytes": 93249235,
+      "sha256": "5b4aeeeebec6bebf0a5e77cf3a270c59ba5e745f8d9a4f4e505d868e61583cdb"
+    },
+    {
+      "path": "hjepa-data/ckpts/cube/cube_hjepa_l2/seed42_paper_v2_20261027/lightning_resume/last.ckpt",
+      "bytes": 279298090,
+      "sha256": "b12606e32423c61e3d4904395a4f0c937ed33c079247678a2ad3f9c994f2a4e5"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_epoch_1_object.ckpt",
+      "bytes": 66243485,
+      "sha256": "55eae0dcfa85a744a873e9c9598ec92d9e5b44f10fb593c62d333d26851c2d98"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_epoch_2_object.ckpt",
+      "bytes": 66243485,
+      "sha256": "e5b9284171868f74fb4a418a59e2072434150ba31f6cd42ffda4158bc16040d0"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_epoch_3_object.ckpt",
+      "bytes": 66243485,
+      "sha256": "7b57fdfa6880d589f0583768218752979494902dc069441e24361f13838f0e11"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_epoch_4_object.ckpt",
+      "bytes": 66243485,
+      "sha256": "5c6ac144690c319a4ed41a2c27f18204af78e59a4486a5de793098b9db26164f"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_epoch_5_object.ckpt",
+      "bytes": 66243485,
+      "sha256": "9a0e25b9a08b6c5ee5a02a515154358015836e4c6bc48e13a19aad09fc98bc29"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_epoch_6_object.ckpt",
+      "bytes": 66243485,
+      "sha256": "8499e6d75c277d46f5b53e75da4650260fcf5701f1fc7cb9a870d2691d8071f5"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_epoch_7_object.ckpt",
+      "bytes": 66243485,
+      "sha256": "48c82749e98f325a2dbeb81c7b7200723702533ff1bc22f38a60767ad23a23c4"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/fourroom_hjepa_l2_object.ckpt",
+      "bytes": 66240365,
+      "sha256": "c70f2c45f9ed228daae71ee8b8dd09f64fd73eb6f83229ffdf6b13a1a2957b29"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l2/seed42_paper_v2_20261027/lightning_resume/last.ckpt",
+      "bytes": 198301714,
+      "sha256": "696c9ce269cd726d8b7a38ba6ea925064c0ac4c0efba9d9e17fc80fff12eaf38"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l4/seed42/final_probing_decoding_eval_v2/decoder_level1.ckpt",
+      "bytes": 13725233,
+      "sha256": "38de70601219354400a961467344defd28c8f9caa02474b750b8fc3a4be829bf"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l4/seed42/final_probing_decoding_eval_v2/decoder_level2.ckpt",
+      "bytes": 13725233,
+      "sha256": "ea3695761df3a5f9a7c28ca2840146152c21063f7799d09ec44c296375a948b9"
+    },
+    {
+      "path": "hjepa-data/ckpts/fourroom/fourroom_hjepa_l4/seed42/final_probing_decoding_eval_v2/decoder_level3.ckpt",
+      "bytes": 13725233,
+      "sha256": "0aafc1a2cc5238604b2856a94a1cc9d27d353964b558057f9cd42f727d21bd72"
+    },
+    {
+      "path": "hjepa-data/ckpts/pusht/pusht_hjepa_l2/seed42_paper_v2_20261027/lightning_resume/last.ckpt",
+      "bytes": 279296362,
+      "sha256": "5f44c8383d8be8a8c10fdaffa3b049030082fd1137c7d24711ad1276cfdff4ad"
+    },
+    {
+      "path": "hjepa-data/ckpts/pusht/pusht_hjepa_l2/seed42_paper_v2_20261027/pusht_hjepa_l2_epoch_1_object.ckpt",
+      "bytes": 93247403,
+      "sha256": "5f1ceeb873f67cb49b7580ee45a4ce939a7f2a661b8642132586cae9833eb24b"
+    },
+    {
+      "path": "hjepa-data/ckpts/pusht/pusht_hjepa_l2/seed42_paper_v2_20261027/pusht_hjepa_l2_epoch_2_object.ckpt",
+      "bytes": 93247403,
+      "sha256": "8d33026e1708980cbc75d877acba189e2e53046bbff36fa06e71657b8bca08a2"
+    },
+    {
+      "path": "hjepa-data/ckpts/pusht/pusht_hjepa_l2/seed42_paper_v2_20261027/pusht_hjepa_l2_epoch_3_object.ckpt",
+      "bytes": 93247403,
+      "sha256": "b1454a1c1b273ac26744e664be7e0b9d40214cbe60347cf3581c040cef1d1820"
+    },
+    {
+      "path": "hjepa-data/ckpts/pusht/pusht_hjepa_l2/seed42_paper_v2_20261027/pusht_hjepa_l2_epoch_4_object.ckpt",
+      "bytes": 93247403,
+      "sha256": "7ef5c3967003ec2ad21c4ee22c414d7ba9131b2b9a588b11c075c90480ee3356"
+    },
+    {
+      "path": "source/local_env/fixes_20261027/decoder_long/decoder_validation_only.ckpt",
+      "bytes": 27452763,
+      "sha256": "85d15d4fc2dad27e1b62aaae62560bba9d2593125ab09d7468969e3df4ed4dd4"
+    },
+    {
+      "path": "source/local_env/fixes_20261027/decoder_lr_control/decoder_validation_only.ckpt",
+      "bytes": 27452763,
+      "sha256": "2a227f98c6432b844a865d23bff1ab895f83e02e75ecddf2089ba4e69338a8c1"
+    },
+    {
+      "path": "source/local_env/fixes_20261027/decoder_validation_only.ckpt",
+      "bytes": 27452763,
+      "sha256": "e18ffadd9b46b20847be0b4f2822d79ba5626b2a0a8b4629fe6df0c8df912352"
+    },
+    {
+      "path": "source/local_env/fixes_20261027/loop_accum1.ckpt",
+      "bytes": 4133,
+      "sha256": "da1f31f21da7e86c4999a281e8519a28658317f524d20ee9ffa7fb2d2c73fa4a"
+    },
+    {
+      "path": "source/local_env/fixes_20261027/loop_accum4.ckpt",
+      "bytes": 4133,
+      "sha256": "466d21362492da4e5bf89c2526f6872690e2fa023a782acd1263cd34b44c719b"
+    }
+  ],
+  "file_count": 31,
+  "bytes": 2479749877
+}

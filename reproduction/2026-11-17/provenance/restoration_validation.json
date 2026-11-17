@@ -1,0 +1,14 @@
+{
+  "verified_archives": [
+    "raw_results.tar.zst",
+    "fixed_eval_tasks.tar.zst",
+    "local_checkpoints.tar.zst",
+    "remote_planning_results_20261029.zip"
+  ],
+  "restored_files": {
+    "raw_results.tar.zst": 12255,
+    "fixed_eval_tasks.tar.zst": 5,
+    "local_checkpoints.tar.zst": 31
+  },
+  "data_dir": "/home/songxw/Documents/Codex/2026-11-17/hjepa-github-https-github-com-zuiailaoyouji/work/restored-data"
+}
