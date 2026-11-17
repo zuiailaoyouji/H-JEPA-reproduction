@@ -17,5 +17,7 @@
   "restored_local_checkpoints_verified": 31,
   "restored_fixed_task_files_verified": 5,
   "raw_cell_completeness_verified": 237,
-  "reaggregated_summary_tables": "Planning and probe summaries are byte/value-equivalent; raw CSV provenance paths change with the restored data directory."
+  "reaggregated_summary_tables": "Planning and probe summaries are byte/value-equivalent; raw CSV provenance paths change with the restored data directory.",
+  "checkpoint_transfer_parts": 9,
+  "checkpoint_rechunking": "256 MiB parts; concatenated compressed stream SHA-256 is unchanged."
 }

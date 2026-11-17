@@ -54,7 +54,11 @@
 # 从仓库根目录执行，Python 3.11。
 bash reproduction/2026-11-17/scripts/reproduce.sh verify
 
-# 下载 Release 附件后恢复；需要 zstd。
+# 下载所有 Release 附件（含 9 个 checkpoint 分卷）；需要 gh 和 zstd。
+gh release download reproduction-2026-11-17 \
+  --repo zuiailaoyouji/H-JEPA-reproduction --dir /path/to/downloaded-release
+
+# 校验并恢复附件。
 python3 reproduction/2026-11-17/scripts/restore_assets.py \
   --assets-dir /path/to/downloaded-release --data-dir /path/to/hjepa-data
 

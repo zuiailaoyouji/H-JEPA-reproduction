@@ -24,16 +24,46 @@
       "parts": [
         {
           "name": "local_checkpoints.tar.zst.part001",
-          "bytes": 1073741824,
-          "sha256": "13674641b629b2f6fa578834dc3c6bd85c189d4981c911b254adf3c9c6bc753e"
+          "bytes": 268435456,
+          "sha256": "d68980c0961f00c421def4400d3977dac2f01b8a83107f55955a390819291b7f"
         },
         {
           "name": "local_checkpoints.tar.zst.part002",
-          "bytes": 1073741824,
-          "sha256": "f9ec75e9bf2f1542170c6695ed406dd277764621057679927af2b2d5ccdeb3fa"
+          "bytes": 268435456,
+          "sha256": "2cccd8eb08e36df0c2f5b729e40869658cc9d0dbf612448eae0583c4f2503d2d"
         },
         {
           "name": "local_checkpoints.tar.zst.part003",
+          "bytes": 268435456,
+          "sha256": "f7a0d2337dbc7778737c261ed7749cc8c1e2b2f1961b344d42b1f9abfa653b23"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part004",
+          "bytes": 268435456,
+          "sha256": "6095da89a1ccc5b4ab347323d9c1ecd3beba5f558818cb9836d3ca961f6c6784"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part005",
+          "bytes": 268435456,
+          "sha256": "2d4ac9a57e97f234f4572ffe74c8d154218f3520e39e661e2d5f7fb2fe95eac8"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part006",
+          "bytes": 268435456,
+          "sha256": "d157bfa122700af3c3516b9febdd04bfdb8fd92dc9ad3eb94fc58181e6f4ccd2"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part007",
+          "bytes": 268435456,
+          "sha256": "3b70d21a7a63a51521f15d45188c10ef1c4723af4fbb59cf23edb403ef9ae52e"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part008",
+          "bytes": 268435456,
+          "sha256": "98fc22ec0ee817e4b0f95f043900a065cf6d1d2d706902eb36ace36251ffd9b3"
+        },
+        {
+          "name": "local_checkpoints.tar.zst.part009",
           "bytes": 132541126,
           "sha256": "0f701a4e97442d2e532c6cdae294918dd830571c3c9f4edbd154c7239f483597"
         }
